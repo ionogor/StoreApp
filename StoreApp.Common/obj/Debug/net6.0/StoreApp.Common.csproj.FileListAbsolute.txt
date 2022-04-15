@@ -1,0 +1,15 @@
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Common\obj\Debug\net6.0\StoreApp.Common.csproj.AssemblyReference.cache
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Common\obj\Debug\net6.0\StoreApp.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Common\obj\Debug\net6.0\StoreApp.Common.AssemblyInfoInputs.cache
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Common\obj\Debug\net6.0\StoreApp.Common.AssemblyInfo.cs
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Common\obj\Debug\net6.0\StoreApp.Common.csproj.CoreCompileInputs.cache
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Common\bin\Debug\net6.0\StoreApp.Common.deps.json
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Common\bin\Debug\net6.0\StoreApp.Common.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Common\bin\Debug\net6.0\StoreApp.Common.pdb
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Common\bin\Debug\net6.0\StoreApp.Domain.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Common\bin\Debug\net6.0\StoreApp.Domain.pdb
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Common\obj\Debug\net6.0\StoreApp.Common.csproj.CopyComplete
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Common\obj\Debug\net6.0\StoreApp.Common.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Common\obj\Debug\net6.0\refint\StoreApp.Common.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Common\obj\Debug\net6.0\StoreApp.Common.pdb
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Common\obj\Debug\net6.0\ref\StoreApp.Common.dll

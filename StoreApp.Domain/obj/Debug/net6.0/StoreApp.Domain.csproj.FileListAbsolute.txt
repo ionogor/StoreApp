@@ -1,0 +1,12 @@
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Domain\bin\Debug\net6.0\StoreApp.Domain.deps.json
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Domain\bin\Debug\net6.0\StoreApp.Domain.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Domain\bin\Debug\net6.0\StoreApp.Domain.pdb
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Domain\obj\Debug\net6.0\StoreApp.Domain.csproj.AssemblyReference.cache
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Domain\obj\Debug\net6.0\StoreApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Domain\obj\Debug\net6.0\StoreApp.Domain.AssemblyInfoInputs.cache
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Domain\obj\Debug\net6.0\StoreApp.Domain.AssemblyInfo.cs
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Domain\obj\Debug\net6.0\StoreApp.Domain.csproj.CoreCompileInputs.cache
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Domain\obj\Debug\net6.0\StoreApp.Domain.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Domain\obj\Debug\net6.0\ref\StoreApp.Domain.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Domain\obj\Debug\net6.0\StoreApp.Domain.pdb
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Domain\obj\Debug\net6.0\refint\StoreApp.Domain.dll
