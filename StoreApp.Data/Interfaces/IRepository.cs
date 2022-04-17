@@ -21,5 +21,6 @@ namespace StoreApp.Data.Interfaces
 
         void SaveChangeAsync();
 
+  
     }
 }

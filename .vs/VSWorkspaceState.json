@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\StoreApp",
+    "\\StoreApp\\Controllers"
   ],
-  "SelectedNode": "\\StoreApp.sln",
+  "SelectedNode": "\\StoreApp\\Controllers\\ProductController.cs",
   "PreviewInSolutionExplorer": false
 }

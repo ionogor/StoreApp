@@ -10,11 +10,12 @@ namespace StoreApp.Bll.Interfaces
 {
     public interface IProductService
     {
-        Task<ProductDto> CreateProduct(ProductDto product);
+        Task<ProductDto> CreateProduct(CreateProductDto product);
         Task<ProductDto> GetProductById(int id);
-        Task<IEnumerable<ProductDto>> GetAllProdducts();
+        Task<IEnumerable<ProductDto>> GetAllProducts();
         Task UpdateProduct(int id, ProductUpdateDto product);
         Task DeleteProduct(int id);
+
 
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using StoreApp.Bll.Interfaces;
 using StoreApp.Common.Dtos.Products;
+using StoreApp.Common.Exceptions;
 
 namespace StoreApp.Controllers
 {
@@ -15,6 +16,7 @@ namespace StoreApp.Controllers
             _productService=productService;
         }
 
+        // product/id
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProductById(int id)
         {
@@ -27,15 +29,15 @@ namespace StoreApp.Controllers
             return Ok(product);
         }
 
-        [HttpGet]
+        [HttpGet] // product
         public async Task<IActionResult> GetAll()
         {
-            var products = await _productService.GetAllProdducts();
+            var products = await _productService.GetAllProducts();
             return Ok(products);
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddProduct([FromBody] ProductDto product)
+        public async Task<IActionResult> AddProduct( [FromBody] CreateProductDto product)
         {
            var productDto = await _productService.CreateProduct(product);
 
@@ -47,7 +49,8 @@ namespace StoreApp.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateProduct(int id, ProductUpdateDto product)
+       // [ApiExceptionFilter]
+        public async Task<IActionResult> UpdateProduct(int id, [FromBody] ProductUpdateDto product)
         {
             if (!ModelState.IsValid)
             {
@@ -56,6 +59,7 @@ namespace StoreApp.Controllers
             await _productService.UpdateProduct(id, product);
             return Ok();
         }
+      
 
         [HttpDelete("{id}")]
         public async Task DeteleProduct(int id)

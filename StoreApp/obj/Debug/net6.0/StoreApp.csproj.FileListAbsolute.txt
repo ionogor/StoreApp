@@ -74,3 +74,5 @@ D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\System.N
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\System.Web.Http.dll
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll

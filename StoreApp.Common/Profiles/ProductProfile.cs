@@ -16,6 +16,7 @@ namespace StoreApp.Common.Profiles
             CreateMap<Product, ProductDto>().ReverseMap();
             CreateMap<ProductUpdateDto, Product>().ReverseMap();
             CreateMap<Product, ProductListDto>();
+            CreateMap<Product, CreateProductDto>().ReverseMap();
         }
     }
 }

@@ -7,16 +7,18 @@ using System.Threading.Tasks;
 
 namespace StoreApp.Common.Dtos.Products
 {
-    public class ProductUpdateDto
+    public  class CreateProductDto
     {
         [Required]
-        [StringLength(50,MinimumLength =3)]
+        [StringLength(20, MinimumLength = 3, ErrorMessage = "Title is too short")]
         public string Title { get; set; }
 
-        [Required]
         [StringLength(100, MinimumLength = 20)]
         public string Description { get; set; }
         public decimal Price { get; set; }
         public int Stock { get; set; }
+
+        public int CatalogId { get; set; }
+        public int SupplierId { get; set; }
     }
 }

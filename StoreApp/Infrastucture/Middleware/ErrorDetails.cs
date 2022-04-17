@@ -2,7 +2,7 @@
 {
     public class ErrorDetails
     {
-        public int Code { get; set; }
+        public int StatusCode { get; set; }
         public string Message { get; set; }
     }
 }

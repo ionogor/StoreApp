@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using StoreApp.Bll.Interfaces;
 using StoreApp.Common.Dtos.Products;
+using StoreApp.Common.Exceptions;
 using StoreApp.Data.Interfaces;
 using StoreApp.Domain.Entity;
 using System;
@@ -24,9 +25,9 @@ namespace StoreApp.Bll.Services
             _mapper= mapper;
         }
 
-        public async Task<ProductDto> CreateProduct([FromBody] ProductDto product)
+        public async Task<ProductDto> CreateProduct([FromBody] CreateProductDto product)
         {
-
+            
           var newProduct=_mapper.Map<Product>(product);
             _repository.Add(newProduct);
             _repository.SaveChangeAsync();
@@ -45,7 +46,7 @@ namespace StoreApp.Bll.Services
             
         }
 
-        public async Task<IEnumerable<ProductDto>> GetAllProdducts()
+        public async Task<IEnumerable<ProductDto>> GetAllProducts()
         {
             var productList=await _repository.GetAll();
             var productDtoList = _mapper.Map<List<ProductDto>>(productList);
@@ -59,13 +60,23 @@ namespace StoreApp.Bll.Services
             return productDto;
         }
 
-
         public async Task UpdateProduct(int id, ProductUpdateDto product)
         {
+            var produs = await _repository.GetById(id);
+       
+            if(produs.Title == product.Title)
+            {
+                throw new EntryAlreadyExistsException("Title corespunde cu cel actual!");
+            }
+
+           
+
             var oneProduct = await _repository.GetById(id);
             _mapper.Map(product, oneProduct);
              _repository.SaveChangeAsync();
 
         }
+
+       
     }
 }
