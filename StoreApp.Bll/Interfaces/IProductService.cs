@@ -1,4 +1,5 @@
 ﻿using StoreApp.Common.Dtos.Products;
+using StoreApp.Common.Paginations;
 using StoreApp.Domain.Entity;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,8 @@ namespace StoreApp.Bll.Interfaces
         Task<IEnumerable<ProductDto>> GetAllProducts();
         Task UpdateProduct(int id, ProductUpdateDto product);
         Task DeleteProduct(int id);
+
+        Task<PaginateResult<ProductListDto>> GetPageProduct(PageRequest pageRequest);
 
 
     }

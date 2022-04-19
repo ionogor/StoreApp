@@ -2332,6 +2332,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4",
+          "StoreApp.Common": "1.0.0",
           "StoreApp.Domain": "1.0.0",
           "System.Configuration.ConfigurationManager": "6.0.0",
           "System.Diagnostics.Tools": "4.3.0"

@@ -1,4 +1,5 @@
-﻿using StoreApp.Domain.Entity;
+﻿using StoreApp.Common.Paginations;
+using StoreApp.Domain.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,7 @@ namespace StoreApp.Data.Interfaces
         void AddRange(IEnumerable<T> entities);
 
         void SaveChangeAsync();
+      
 
   
     }

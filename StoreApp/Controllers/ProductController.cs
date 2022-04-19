@@ -10,22 +10,28 @@ namespace StoreApp.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IProductService _productService;
-
-        public ProductController(IProductService productService)
+        private readonly ILogger<ProductController> _logger;
+        public ProductController(IProductService productService,ILogger<ProductController> logger)
         {
             _productService=productService;
+            _logger=logger;
         }
 
         // product/id
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetProductById(int id)
+        [HttpGet("{id}")] // person/service/2
+        public async Task<IActionResult> GetProductById( int id)
         {
+            //if(id==0 || id<1)
+            //{
+            //    _logger.LogWarning("Id mai mic decit 1 sau este egal cu 0");
+            //}
             var product =await _productService.GetProductById(id);
             
             if(product == null)
             {
                 return NotFound($"Product with {id} doesn't exist");
             }
+          
             return Ok(product);
         }
 
@@ -49,13 +55,10 @@ namespace StoreApp.Controllers
         }
 
         [HttpPut("{id}")]
-       // [ApiExceptionFilter]
+        [ApiExceptionFilter]
         public async Task<IActionResult> UpdateProduct(int id, [FromBody] ProductUpdateDto product)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+          
             await _productService.UpdateProduct(id, product);
             return Ok();
         }

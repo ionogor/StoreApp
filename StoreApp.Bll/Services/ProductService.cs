@@ -2,6 +2,7 @@
 using StoreApp.Bll.Interfaces;
 using StoreApp.Common.Dtos.Products;
 using StoreApp.Common.Exceptions;
+using StoreApp.Common.Paginations;
 using StoreApp.Data.Interfaces;
 using StoreApp.Domain.Entity;
 using System;
@@ -46,11 +47,18 @@ namespace StoreApp.Bll.Services
             
         }
 
+     
+
         public async Task<IEnumerable<ProductDto>> GetAllProducts()
         {
             var productList=await _repository.GetAll();
             var productDtoList = _mapper.Map<List<ProductDto>>(productList);
             return productDtoList;
+        }
+
+        public Task<PaginateResult<ProductListDto>> GetPageProduct(PageRequest pageRequest)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<ProductDto> GetProductById(int id)
@@ -62,15 +70,12 @@ namespace StoreApp.Bll.Services
 
         public async Task UpdateProduct(int id, ProductUpdateDto product)
         {
-            var produs = await _repository.GetById(id);
-       
-            if(produs.Title == product.Title)
-            {
-                throw new EntryAlreadyExistsException("Title corespunde cu cel actual!");
-            }
+            //var produs = await _repository.GetById(id);
 
-           
-
+            //if (produs.Title == product.Title)
+            //{
+            //    throw new EntryAlreadyExistsException("Title corespunde cu cel actual!");
+            //}
             var oneProduct = await _repository.GetById(id);
             _mapper.Map(product, oneProduct);
              _repository.SaveChangeAsync();

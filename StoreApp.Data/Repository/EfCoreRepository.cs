@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using StoreApp.Common.Paginations;
 using StoreApp.Data.Context;
 using StoreApp.Data.Interfaces;
 using StoreApp.Domain.Entity;
@@ -49,6 +50,7 @@ namespace StoreApp.Data.Repository
 
         }
 
+
         public void SaveChangeAsync()
         {
             _context.SaveChangesAsync();
@@ -61,6 +63,7 @@ namespace StoreApp.Data.Repository
         }
 
        
+        
 
 
     }

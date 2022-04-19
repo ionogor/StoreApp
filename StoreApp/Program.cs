@@ -15,28 +15,41 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped(typeof(IRepository<>),typeof(EfCoreRepository<>));
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddAutoMapper(typeof(ProductProfile));
 builder.Services.AddScoped<IProductService,ProductService>();
+builder.Services.AddScoped<ICatalogService,CatalogService>();
 
 var app = builder.Build();
 
-app.UseMiddleware<ErrorHandlingMiddleware>();
+//app.UseMiddleware<ErrorHandlingMiddleware>(); // Middleware custom
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
 }
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
+//app.UseMiddleware<ErrorMiddleware>();
+//app.UseMiddleware<Authentification>();
+//app.UseMiddleware<Routing>();
+
 
 app.UseHttpsRedirection();
+app.UseDefaultFiles();
 app.UseStaticFiles();
 
 app.UseAuthorization();
 
 app.MapControllers();
+
 
 app.Run();

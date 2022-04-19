@@ -16,3 +16,5 @@ D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\obj\Debug\net6.0\Sto
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\obj\Debug\net6.0\StoreApp.Data.genruntimeconfig.cache
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\bin\Debug\net6.0\StoreApp.Data.dll.config
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\obj\Debug\net6.0\refint\StoreApp.Data.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\bin\Debug\net6.0\StoreApp.Common.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\bin\Debug\net6.0\StoreApp.Common.pdb

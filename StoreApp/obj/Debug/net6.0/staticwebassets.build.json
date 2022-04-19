@@ -1,11 +1,37 @@
 {
   "Version": 1,
-  "Hash": "sME381v9fwVDpVeSwE5EBZBAHFY9HxjxUlMd9E/7q7Q=",
+  "Hash": "M1F6QvqkybgcfndSwZh718ZMBZHzJYRoG+NQuwL21kA=",
   "Source": "StoreApp",
   "BasePath": "_content/StoreApp",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "StoreApp\\wwwroot",
+      "Source": "StoreApp",
+      "ContentRoot": "D:\\Internship Amdaris\\ProiectAmdaris\\StoreApp\\StoreApp\\wwwroot\\",
+      "BasePath": "_content/StoreApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Internship Amdaris\\ProiectAmdaris\\StoreApp\\StoreApp\\wwwroot\\index.html",
+      "SourceId": "StoreApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Internship Amdaris\\ProiectAmdaris\\StoreApp\\StoreApp\\wwwroot\\",
+      "BasePath": "_content/StoreApp",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
 }

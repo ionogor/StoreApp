@@ -171,6 +171,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "D:\\Internship Amdaris\\ProiectAmdaris\\StoreApp\\StoreApp.Common\\StoreApp.Common.csproj": {
+                "projectPath": "D:\\Internship Amdaris\\ProiectAmdaris\\StoreApp\\StoreApp.Common\\StoreApp.Common.csproj"
+              },
               "D:\\Internship Amdaris\\ProiectAmdaris\\StoreApp\\StoreApp.Domain\\StoreApp.Domain.csproj": {
                 "projectPath": "D:\\Internship Amdaris\\ProiectAmdaris\\StoreApp\\StoreApp.Domain\\StoreApp.Domain.csproj"
               }

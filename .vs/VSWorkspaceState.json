@@ -1,9 +1,14 @@
 {
   "ExpandedNodes": [
     "",
+    "\\StorApp.Data",
     "\\StoreApp",
+    "\\StoreApp.Bll",
+    "\\StoreApp.Bll\\Services",
+    "\\StoreApp.Common",
+    "\\StoreApp.Common\\Profiles",
     "\\StoreApp\\Controllers"
   ],
-  "SelectedNode": "\\StoreApp\\Controllers\\ProductController.cs",
+  "SelectedNode": "\\StoreApp.sln",
   "PreviewInSolutionExplorer": false
 }
