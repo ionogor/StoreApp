@@ -18,6 +18,7 @@ namespace StoreApp.Common.Profiles
             CreateMap<ProductUpdateDto, Product>().ReverseMap();
             CreateMap<Product, ProductListDto>();
             CreateMap<Product, CreateProductDto>().ReverseMap();
+            CreateMap<Product,ProductListDto>().ReverseMap();
 
             // Catalog Mapp
 

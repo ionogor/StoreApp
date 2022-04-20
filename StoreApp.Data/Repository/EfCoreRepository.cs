@@ -39,9 +39,9 @@ namespace StoreApp.Data.Repository
 
         }
 
-        public async Task<List<T>> GetAll()
+        public  ICollection<T> GetAll()
         {
-            return _context.Set<T>().ToList();
+            return  _context.Set<T>().ToList();
         }
 
         public async Task<T> GetById(int id)

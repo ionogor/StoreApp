@@ -11,7 +11,7 @@ namespace StoreApp.Data.Interfaces
     public interface IRepository<T> where T : BaseEntity
     {
         Task<T> GetById(int id);
-        Task<List<T>> GetAll();
+        ICollection<T> GetAll();
 
         void Delete(T entity);
 

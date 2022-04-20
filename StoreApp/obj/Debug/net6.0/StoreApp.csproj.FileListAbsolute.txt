@@ -14,7 +14,6 @@ D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\obj\Debug\net6.0\StoreApp
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\obj\Debug\net6.0\StoreApp.AssemblyInfoInputs.cache
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\obj\Debug\net6.0\StoreApp.AssemblyInfo.cs
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\obj\Debug\net6.0\StoreApp.csproj.CoreCompileInputs.cache
-D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\obj\Debug\net6.0\StoreApp.MvcApplicationPartsAssemblyInfo.cs
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\obj\Debug\net6.0\StoreApp.MvcApplicationPartsAssemblyInfo.cache
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\obj\Debug\net6.0\staticwebassets.build.json
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\obj\Debug\net6.0\staticwebassets.development.json

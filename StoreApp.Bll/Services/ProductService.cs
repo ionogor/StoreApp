@@ -47,18 +47,36 @@ namespace StoreApp.Bll.Services
             
         }
 
-     
-
         public async Task<IEnumerable<ProductDto>> GetAllProducts()
         {
-            var productList=await _repository.GetAll();
+            var productList= _repository.GetAll();
             var productDtoList = _mapper.Map<List<ProductDto>>(productList);
             return productDtoList;
         }
 
-        public Task<PaginateResult<ProductListDto>> GetPageProduct(PageRequest pageRequest)
+        public async Task<PageRequest> GetPageProduct(int page)
         {
-            throw new NotImplementedException();
+            var pageProductsResult = 2f;
+            var pageCount = Math.Ceiling(_repository.GetAll().Count()/pageProductsResult);
+
+            var productList = _repository.GetAll()
+                .Skip((page-1)*(int)pageProductsResult).Take((int)pageProductsResult).ToList();
+
+            var listProductDto = _mapper.Map<List<ProductListDto>>(productList);
+
+
+            var productListDto = new PageRequest
+            {
+                Pages = (int)pageCount,
+                CurrentPage = page,
+                ProductListDtos = listProductDto
+
+            };
+
+            return  productListDto;
+
+     
+            
         }
 
         public async Task<ProductDto> GetProductById(int id)
@@ -78,10 +96,10 @@ namespace StoreApp.Bll.Services
             //}
             var oneProduct = await _repository.GetById(id);
             _mapper.Map(product, oneProduct);
-             _repository.SaveChangeAsync();
+            _repository.Update(oneProduct);
+             //_repository.SaveChangeAsync();
 
         }
 
-       
     }
 }

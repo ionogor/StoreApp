@@ -16,9 +16,7 @@ namespace StoreApp.Bll.Interfaces
         Task<IEnumerable<ProductDto>> GetAllProducts();
         Task UpdateProduct(int id, ProductUpdateDto product);
         Task DeleteProduct(int id);
-
-        Task<PaginateResult<ProductListDto>> GetPageProduct(PageRequest pageRequest);
-
+        Task<PageRequest> GetPageProduct(int id);
 
     }
 }
