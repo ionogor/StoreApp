@@ -1555,6 +1555,7 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4",
           "StoreApp.Domain": "1.0.0"
         },
         "compile": {
@@ -1567,6 +1568,9 @@
       "StoreApp.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4"
+        },
         "compile": {
           "bin/placeholder/StoreApp.Domain.dll": {}
         },

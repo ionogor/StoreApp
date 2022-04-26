@@ -36,6 +36,13 @@ namespace StoreApp.Controllers
             return Ok(catalog);
         }
 
+        [HttpGet]
+        public async Task<ActionResult> GetCatalog()
+        {
+            var catalogs = await _catalogService.GetAllCatalogs();
+            return Ok(catalogs);
+        }
+
         
     }
 }

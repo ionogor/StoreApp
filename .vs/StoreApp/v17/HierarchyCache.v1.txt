@@ -1,15 +1,17 @@
-﻿++Solution 'StoreApp' ‎(5 of 5 projects)
+﻿++Solution 'StoreApp' ‎(6 of 6 projects)
 i:{00000000-0000-0000-0000-000000000000}:StoreApp.sln
 ++StoreApp
 i:{00000000-0000-0000-0000-000000000000}:StoreApp
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\bin\debug\net6.0\storeapp.dll
 ++Connected Services 
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>679
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1288
 ++Dependencies
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>678
-i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:>595
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>593
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:>594
-i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>592
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1287
+i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:>704
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>703
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:>1132
+i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>1059
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1058
 ++Properties
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\properties\
 ++wwwroot
@@ -31,29 +33,34 @@ i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\st
 ++README.md
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\readme.md
 ++No service dependencies discovered
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>680
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1289
 ++Analyzers
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:analyzers
 i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:analyzers
 i:{961055ab-0ea9-44e4-920c-059642abc8ab}:analyzers
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:analyzers
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:analyzers
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:analyzers
 ++Frameworks
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:frameworks
 i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:frameworks
 i:{961055ab-0ea9-44e4-920c-059642abc8ab}:frameworks
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:frameworks
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:frameworks
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:frameworks
 ++Packages
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:packages
+i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:packages
 i:{961055ab-0ea9-44e4-920c-059642abc8ab}:packages
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:packages
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:packages
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:packages
 ++Projects
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:projects
 i:{961055ab-0ea9-44e4-920c-059642abc8ab}:projects
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:projects
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:projects
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:projects
 ++launchSettings.json
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\properties\launchsettings.json
 ++index.html
@@ -70,8 +77,10 @@ i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\st
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
 ++Microsoft.AspNetCore.App.Analyzers
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
 ++Microsoft.AspNetCore.App.CodeFixes
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
 ++Microsoft.AspNetCore.Components.Analyzers
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
 ++Microsoft.AspNetCore.Mvc.Analyzers
@@ -84,20 +93,28 @@ i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:c:\program files\dotnet\sdk\6.0.202\sdk
 i:{961055ab-0ea9-44e4-920c-059642abc8ab}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
 ++Microsoft.CodeAnalysis.NetAnalyzers
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
 i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
 i:{961055ab-0ea9-44e4-920c-059642abc8ab}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
 ++Microsoft.EntityFrameworkCore.Analyzers
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:c:\users\user\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:c:\users\user\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
 i:{961055ab-0ea9-44e4-920c-059642abc8ab}:c:\users\user\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:c:\users\user\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:c:\users\user\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:c:\users\user\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
 ++Microsoft.Extensions.Logging.Generators
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:c:\users\user\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
 i:{961055ab-0ea9-44e4-920c-059642abc8ab}:c:\users\user\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:c:\users\user\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:c:\users\user\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
 ++Microsoft.NET.Sdk.Razor.SourceGenerators
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
 ++System.Text.Json.SourceGeneration
@@ -106,6 +123,7 @@ i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:c:\program files\dotnet\packs\microsoft
 i:{961055ab-0ea9-44e4-920c-059642abc8ab}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.4\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.4\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.4\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.4\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
 ++Microsoft.AspNetCore.App
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\microsoft.aspnetcore.app
 ++Microsoft.NETCore.App
@@ -114,14 +132,19 @@ i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:d:\internship amdaris\proiectamdaris\st
 i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\microsoft.netcore.app
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\microsoft.netcore.app
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\microsoft.netcore.app
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:d:\internship amdaris\proiectamdaris\storeapp\productunittest\microsoft.netcore.app
 ++Microsoft.EntityFrameworkCore.Design (6.0.4)
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>714
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>690
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1377
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1353
 ++Microsoft.EntityFrameworkCore.SqlServer (6.0.4)
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>713
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>688
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1376
+i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:>1320
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1351
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:>1309
+i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>1296
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1334
 ++Swashbuckle.AspNetCore (6.3.0)
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>715
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1378
 ++StoreApp.Bll
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\bin\debug\net6.0\storeapp.bll.dll
 i:{00000000-0000-0000-0000-000000000000}:StoreApp.Bll
@@ -131,7 +154,7 @@ i:{00000000-0000-0000-0000-000000000000}:StoreApp.Data
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\storeapp.data.csproj
 ++StoreApp.Domain
 i:{00000000-0000-0000-0000-000000000000}:StoreApp.Domain
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.domain\storeapp.domain.csproj
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.domain\bin\debug\net6.0\storeapp.domain.dll
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.domain\storeapp.domain.csproj
 ++Entity
 i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.domain\entity\
@@ -195,15 +218,15 @@ i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\st
 ++Seed.cs
 i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\seed\seed.cs
 ++Microsoft.EntityFrameworkCore (6.0.4)
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>687
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1350
 ++Microsoft.EntityFrameworkCore.Tools (6.0.4)
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>692
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1355
 ++System.Configuration.ConfigurationManager (6.0.0)
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>691
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1354
 ++System.Diagnostics.Tools (4.3.0)
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>689
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1352
 ++StoreApp.Common
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\storeapp.common.csproj
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\bin\debug\net6.0\storeapp.common.dll
 i:{00000000-0000-0000-0000-000000000000}:StoreApp.Common
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\storeapp.common.csproj
 ++20220415074855_Initial.Designer.cs
@@ -230,35 +253,35 @@ i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\st
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\products\productupdatedto.cs
 ++Users
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\users\
-++Exceptions
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\exceptions\
-++Paginations
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\paginations\
-++PageRequest.cs
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\paginations\pagerequest.cs
-++PaginateResult.cs
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\paginations\paginateresult.cs
-++Profiles
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\profiles\
-++ProductProfile.cs
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\profiles\productprofile.cs
 ++UserDto.cs
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\users\userdto.cs
 ++UserListDto.cs
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\users\userlistdto.cs
 ++UserUpdateDto.cs
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\users\userupdatedto.cs
+++Exceptions
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\exceptions\
+++Paginations
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\paginations\
+++Profiles
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\profiles\
+++ProductProfile.cs
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\profiles\productprofile.cs
 ++ApiException.cs
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\exceptions\apiexception.cs
 ++ApiExceptionFilter.cs
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\exceptions\apiexceptionfilter.cs
 ++EntryAlreadyExistsException.cs
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\exceptions\entryalreadyexistsexception.cs
+++PageRequest.cs
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\paginations\pagerequest.cs
+++PaginateResult.cs
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\paginations\paginateresult.cs
 ++AutoMapper.Extensions.Microsoft.DependencyInjection (11.0.0)
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:>743
-i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>731
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:>1310
+i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>1297
 ++Microsoft.AspNetCore.Mvc.Core (2.2.5)
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:>744
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:>1311
 ++ICatalogService.cs
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\interfaces\icatalogservice.cs
 ++IProductService.cs
@@ -272,6 +295,22 @@ i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\st
 ++ProductService.cs
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\services\productservice.cs
 ++AutoMapper (11.0.1)
-i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>733
+i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>1299
 ++Microsoft.AspNet.WebApi.Core (5.2.8)
-i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>732
+i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>1298
+++ProductUnitTest
+i:{00000000-0000-0000-0000-000000000000}:ProductUnitTest
+++ProductTest.cs
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:d:\internship amdaris\proiectamdaris\storeapp\productunittest\producttest.cs
+++xunit.analyzers
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:c:\users\user\.nuget\packages\xunit.analyzers\0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll
+++coverlet.collector (3.1.0)
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1338
+++Microsoft.NET.Test.Sdk (16.11.0)
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1333
+++Moq (4.17.2)
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1337
+++xunit (2.4.1)
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1335
+++xunit.runner.visualstudio (2.4.3)
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1336

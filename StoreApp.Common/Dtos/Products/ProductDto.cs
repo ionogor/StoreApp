@@ -20,7 +20,7 @@ namespace StoreApp.Common.Dtos.Products
         public decimal Price { get; set; }
         public int Stock { get; set; }
 
-        public int CatalogId { get; set; }
+        public string CatalogName{ get; set; }
         public int SupplierId { get; set; }
     }
 }

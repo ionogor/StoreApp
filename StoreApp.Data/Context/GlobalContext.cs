@@ -63,6 +63,8 @@ namespace StoreApp.Data.Context
             modelBuilder.SeedCatalog();
             modelBuilder.SeedSupplier();
             modelBuilder.SeedProducts();
+
+           
         }
     }
 }

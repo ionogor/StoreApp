@@ -11,6 +11,7 @@
           "AutoMapper": "11.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Microsoft.AspNet.WebApi.Core": "5.2.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4",
           "StoreApp.Common": "1.0.0",
           "StoreApp.Data": "1.0.0"
         },
@@ -1567,6 +1568,7 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4",
           "StoreApp.Domain": "1.0.0"
         },
         "runtime": {
@@ -1587,6 +1589,9 @@
         }
       },
       "StoreApp.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4"
+        },
         "runtime": {
           "StoreApp.Domain.dll": {}
         }

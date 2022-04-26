@@ -10,11 +10,11 @@ namespace StoreApp.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IProductService _productService;
-        private readonly ILogger<ProductController> _logger;
-        public ProductController(IProductService productService, ILogger<ProductController> logger)
+       // private readonly ILogger<ProductController> _logger;
+        public ProductController(IProductService productService)
         {
             _productService=productService;
-            _logger=logger;
+            
         }
 
         // product/id
@@ -25,6 +25,8 @@ namespace StoreApp.Controllers
             //{
             //    _logger.LogWarning("Id mai mic decit 1 sau este egal cu 0");
             //}
+            //  var product = await _productService.GetProductById(id);
+
             var product = await _productService.GetProductById(id);
 
             if (product == null)

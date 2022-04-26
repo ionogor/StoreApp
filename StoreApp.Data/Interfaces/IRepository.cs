@@ -3,6 +3,7 @@ using StoreApp.Domain.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,7 +12,7 @@ namespace StoreApp.Data.Interfaces
     public interface IRepository<T> where T : BaseEntity
     {
         Task<T> GetById(int id);
-        ICollection<T> GetAll();
+        IEnumerable<T> GetAll();
 
         void Delete(T entity);
 
@@ -22,7 +23,12 @@ namespace StoreApp.Data.Interfaces
 
         void SaveChangeAsync();
       
-
-  
-    }
+        Task<TEntity> GetByIdWithInclude<TEntity>(int id, params Expression<Func<TEntity, object>>[] includeProperties) where TEntity : BaseEntity;
+       }
+   
 }
+
+
+
+
+

@@ -1,5 +1,6 @@
 ﻿using StoreApp.Common.Dtos.Products;
 using StoreApp.Common.Paginations;
+using StoreApp.Data.Interfaces;
 using StoreApp.Domain.Entity;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ namespace StoreApp.Bll.Interfaces
         Task UpdateProduct(int id, ProductUpdateDto product);
         Task DeleteProduct(int id);
         Task<PageRequest> GetPageProduct(int id);
+       
 
     }
 }

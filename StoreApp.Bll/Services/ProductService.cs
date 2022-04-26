@@ -20,40 +20,39 @@ namespace StoreApp.Bll.Services
         private readonly IRepository<Product> _repository;
         private readonly IMapper _mapper;
 
-        public ProductService(IRepository<Product> repository,IMapper mapper)
+        public ProductService(IRepository<Product> repository, IMapper mapper)
         {
             _repository= repository;
             _mapper= mapper;
         }
 
+
+
         public async Task<ProductDto> CreateProduct([FromBody] CreateProductDto product)
         {
-            
-          var newProduct=_mapper.Map<Product>(product);
+
+            var newProduct = _mapper.Map<Product>(product);
             _repository.Add(newProduct);
             _repository.SaveChangeAsync();
-
             var productDto = _mapper.Map<ProductDto>(newProduct);
-
             return productDto;
-
         }
 
         public async Task DeleteProduct(int id)
         {
-           var entity= await _repository.GetById(id);
-            
-           _repository.Delete(entity);
-            
+            var entity = await _repository.GetById(id);
+            _repository.Delete(entity);
         }
 
         public async Task<IEnumerable<ProductDto>> GetAllProducts()
         {
-            var productList= _repository.GetAll();
+            var productList = _repository.GetAll();
+
             var productDtoList = _mapper.Map<List<ProductDto>>(productList);
             return productDtoList;
         }
 
+    
         public async Task<PageRequest> GetPageProduct(int page)
         {
             var pageProductsResult = 2f;
@@ -73,16 +72,14 @@ namespace StoreApp.Bll.Services
 
             };
 
-            return  productListDto;
+            return productListDto;
 
-     
-            
         }
 
         public async Task<ProductDto> GetProductById(int id)
         {
-            var product = await _repository.GetById(id);
-            var productDto = _mapper.Map<ProductDto>(product);
+            var products = await _repository.GetByIdWithInclude<Product>(id, prod => prod.Catalog);
+            var productDto = _mapper.Map<ProductDto>(products);
             return productDto;
         }
 
@@ -97,9 +94,10 @@ namespace StoreApp.Bll.Services
             var oneProduct = await _repository.GetById(id);
             _mapper.Map(product, oneProduct);
             _repository.Update(oneProduct);
-             //_repository.SaveChangeAsync();
+            
 
         }
 
+    
     }
 }

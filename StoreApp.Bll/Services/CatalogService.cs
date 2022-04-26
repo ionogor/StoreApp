@@ -33,14 +33,21 @@ namespace StoreApp.Bll.Services
             return newCatalogDto;
         }
 
-        public Task DeleteCatalog(int id)
+        public async Task DeleteCatalog(int id)
         {
-            throw new NotImplementedException();
+            var entity = await _repository.GetById(id);
+
+            _repository.Delete(entity);
+
         }
 
-        public Task<IEnumerable<CatalogDto>> GetAllCatalogs()
+        public async Task<IEnumerable<CatalogDto>> GetAllCatalogs()
         {
-            throw new NotImplementedException();
+           var catalogs = _repository.GetAll();
+
+            var catalogsDto = _mapper.Map<List<CatalogDto>>(catalogs);
+
+            return catalogsDto;
         }
 
         public  async Task<CatalogDto> GetCatalogByID(int id)
@@ -53,11 +60,16 @@ namespace StoreApp.Bll.Services
 
         }
 
-        public Task UpdateCatalog(int id, CatalogUpdateDto product)
+        public async Task UpdateCatalog(int id, CatalogUpdateDto catalog)
         {
- 
-            throw new NotImplementedException();
-            
+
+            var catalogs =await _repository.GetById(id);
+           
+            _mapper.Map(catalog, catalogs);
+
+            _repository.Update(catalogs);
+
+
         }
     }
 }
