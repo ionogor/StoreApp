@@ -12,6 +12,7 @@ namespace StoreApp.Data.Interfaces
     public interface IRepository<T> where T : BaseEntity
     {
         Task<T> GetById(int id);
+
         IEnumerable<T> GetAll();
 
         void Delete(T entity);
@@ -22,7 +23,8 @@ namespace StoreApp.Data.Interfaces
         void AddRange(IEnumerable<T> entities);
 
         void SaveChangeAsync();
-      
+
+     
         Task<TEntity> GetByIdWithInclude<TEntity>(int id, params Expression<Func<TEntity, object>>[] includeProperties) where TEntity : BaseEntity;
        }
    

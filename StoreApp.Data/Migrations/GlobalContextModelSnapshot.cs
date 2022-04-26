@@ -97,10 +97,6 @@ namespace StoreApp.Data.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
-                    b.Property<string>("ShipAddress")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<decimal>("TotalPrice")
                         .HasColumnType("decimal(18,2)");
 
@@ -204,7 +200,7 @@ namespace StoreApp.Data.Migrations
                             CatalogId = 1,
                             Description = "Laptop Acer 15.6, 256Gb, 8Gb ",
                             Price = 900m,
-                            Stock = 0,
+                            Stock = 5,
                             SupplierId = 3,
                             Title = "Acer Laptop 755"
                         },
@@ -214,7 +210,7 @@ namespace StoreApp.Data.Migrations
                             CatalogId = 1,
                             Description = "Laptop Acer 13, 256Gb, 8Gb ",
                             Price = 1200m,
-                            Stock = 0,
+                            Stock = 2,
                             SupplierId = 2,
                             Title = "Apple Laptop MacbookPro"
                         });
@@ -345,18 +341,22 @@ namespace StoreApp.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("AddressId")
+                    b.Property<int?>("AddressId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Login")
-                        .HasColumnType("int");
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Login")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("Type")
@@ -451,9 +451,7 @@ namespace StoreApp.Data.Migrations
                 {
                     b.HasOne("StoreApp.Domain.Entity.Address", "Address")
                         .WithMany("Users")
-                        .HasForeignKey("AddressId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("AddressId");
 
                     b.Navigation("Address");
                 });

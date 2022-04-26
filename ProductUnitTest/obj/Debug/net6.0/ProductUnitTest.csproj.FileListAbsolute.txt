@@ -160,3 +160,5 @@ D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\obj\Debug\net6.0\r
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\obj\Debug\net6.0\ProductUnitTest.pdb
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\obj\Debug\net6.0\ProductUnitTest.genruntimeconfig.cache
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\obj\Debug\net6.0\ref\ProductUnitTest.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\DevOne.Security.Cryptography.BCrypt.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\BCrypt.Net-Next.dll

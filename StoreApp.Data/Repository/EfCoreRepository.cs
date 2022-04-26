@@ -49,7 +49,8 @@ namespace StoreApp.Data.Repository
             return  _context.Set<T>().ToList();
         }
 
-    
+        
+
         public async Task<T> GetById(int id)
         {
           

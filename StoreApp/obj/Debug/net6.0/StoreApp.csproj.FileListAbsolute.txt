@@ -77,3 +77,5 @@ D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\Microsof
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\StoreApp.staticwebassets.runtime.json
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\obj\Debug\net6.0\StoreApp.MvcApplicationPartsAssemblyInfo.cs
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\DevOne.Security.Cryptography.BCrypt.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\BCrypt.Net-Next.dll
