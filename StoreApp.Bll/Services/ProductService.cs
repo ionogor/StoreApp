@@ -4,6 +4,7 @@ using StoreApp.Common.Dtos.Products;
 using StoreApp.Common.Exceptions;
 using StoreApp.Common.Paginations;
 using StoreApp.Data.Interfaces;
+using StoreApp.Data.ViewModels;
 using StoreApp.Domain.Entity;
 using System;
 using System.Collections.Generic;
@@ -44,21 +45,26 @@ namespace StoreApp.Bll.Services
             _repository.Delete(entity);
         }
 
-        public async Task<IEnumerable<ProductDto>> GetAllProducts()
+        public async Task<IEnumerable<ProductDto>> GetAllProducts(PaginatedViewModel paginatedViewModel)
         {
-            var productList = _repository.GetAll();
+            var productList = _repository.GetAll(paginatedViewModel);
 
             var productDtoList = _mapper.Map<List<ProductDto>>(productList);
             return productDtoList;
         }
 
-    
+
         public async Task<PageRequest> GetPageProduct(int page)
         {
+            var paginatedViewModel = new PaginatedViewModel()
+            {
+                Page = page,
+                Count = 10
+            };
             var pageProductsResult = 2f;
-            var pageCount = Math.Ceiling(_repository.GetAll().Count()/pageProductsResult);
+            var pageCount = Math.Ceiling(_repository.GetAll(paginatedViewModel).Count()/pageProductsResult);
 
-            var productList = _repository.GetAll()
+            var productList = _repository.GetAll(paginatedViewModel)
                 .Skip((page-1)*(int)pageProductsResult).Take((int)pageProductsResult).ToList();
 
             var listProductDto = _mapper.Map<List<ProductListDto>>(productList);
@@ -78,7 +84,7 @@ namespace StoreApp.Bll.Services
 
         public async Task<ProductDto> GetProductById(int id)
         {
-            var products = await _repository.GetByIdWithInclude<Product>(id, prod => prod.Catalog);
+            var products = await _repository.GetById(id);
             var productDto = _mapper.Map<ProductDto>(products);
             return productDto;
         }
@@ -91,6 +97,7 @@ namespace StoreApp.Bll.Services
             //{
             //    throw new EntryAlreadyExistsException("Title corespunde cu cel actual!");
             //}
+
             var oneProduct = await _repository.GetById(id);
             _mapper.Map(product, oneProduct);
             _repository.Update(oneProduct);

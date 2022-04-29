@@ -2,6 +2,7 @@
 using StoreApp.Common.Paginations;
 using StoreApp.Data.Context;
 using StoreApp.Data.Interfaces;
+using StoreApp.Data.ViewModels;
 using StoreApp.Domain.Entity;
 using System;
 using System.Collections.Generic;
@@ -44,9 +45,9 @@ namespace StoreApp.Data.Repository
 
         }
 
-        public  IEnumerable<T> GetAll()
+        public  IEnumerable<T> GetAll(PaginatedViewModel paginatedViewModel)
         {
-            return  _context.Set<T>().ToList();
+            return  _context.Set<T>().OrderBy(x=>x.Id).Take(paginatedViewModel.Count).ToList();
         }
 
         

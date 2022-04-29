@@ -1,15 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\StoreApp",
-    "\\StoreApp.Bll",
-    "\\StoreApp.Bll\\Interfaces",
-    "\\StoreApp.Common",
-    "\\StoreApp.Data",
-    "\\StoreApp.Data\\Interfaces",
-    "\\StoreApp.Data\\Repository",
-    "\\StoreApp\\Controllers"
+    ""
   ],
-  "SelectedNode": "\\StoreApp.sln",
   "PreviewInSolutionExplorer": false
 }

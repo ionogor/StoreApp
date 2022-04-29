@@ -2,6 +2,7 @@
 using StoreApp.Bll.Interfaces;
 using StoreApp.Common.Dtos.Products;
 using StoreApp.Common.Exceptions;
+using StoreApp.Data.ViewModels;
 
 namespace StoreApp.Controllers
 {
@@ -37,10 +38,15 @@ namespace StoreApp.Controllers
             return Ok(product);
         }
 
-        [HttpGet] // product
+        [HttpGet] 
         public async Task<IActionResult> GetAll()
         {
-            var products = await _productService.GetAllProducts();
+            var paginatedViewModel = new PaginatedViewModel()
+            {
+                Page = 1,
+                Count = 10
+            };
+            var products = await _productService.GetAllProducts(paginatedViewModel);
             return Ok(products);
         }
 

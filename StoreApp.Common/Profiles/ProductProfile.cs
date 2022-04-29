@@ -14,7 +14,7 @@ namespace StoreApp.Common.Profiles
     {
         public ProductProfile()
         {
-            CreateMap<Product, ProductDto>().ForMember(x => x.CatalogName, o => o.MapFrom(x => x.Catalog.Name));
+            CreateMap<Product, ProductDto>();
             CreateMap<ProductUpdateDto, Product>().ReverseMap();
             CreateMap<Product, ProductListDto>();
             CreateMap<Product, CreateProductDto>().ReverseMap();
@@ -22,10 +22,11 @@ namespace StoreApp.Common.Profiles
 
             // Catalog Mapp
 
-            CreateMap<Catalog, CatalogDto>().ReverseMap();
-            CreateMap<CatalogDto, Catalog>();
+            CreateMap<Catalog,CatalogDto>();
+          
             CreateMap<CreateCatalogDto, Catalog>();
             CreateMap<Catalog, CreateCatalogDto>();
+           
 
 
         }

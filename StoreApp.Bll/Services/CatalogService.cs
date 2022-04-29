@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using StoreApp.Bll.Interfaces;
 using StoreApp.Common.Dtos.Catalogs;
+using StoreApp.Common.Dtos.Products;
 using StoreApp.Data.Interfaces;
+using StoreApp.Data.ViewModels;
 using StoreApp.Domain.Entity;
 using System;
 using System.Collections.Generic;
@@ -41,9 +43,9 @@ namespace StoreApp.Bll.Services
 
         }
 
-        public async Task<IEnumerable<CatalogDto>> GetAllCatalogs()
+        public async Task<IEnumerable<CatalogDto>> GetAllCatalogs(PaginatedViewModel paginatedView)
         {
-           var catalogs = _repository.GetAll();
+           var catalogs = _repository.GetAll(paginatedView);
 
             var catalogsDto = _mapper.Map<List<CatalogDto>>(catalogs);
 
@@ -52,7 +54,7 @@ namespace StoreApp.Bll.Services
 
         public  async Task<CatalogDto> GetCatalogByID(int id)
         {
-            var catalog = await _repository.GetById(id);
+            var catalog = await _repository.GetByIdWithInclude<Catalog>(id, catalog => catalog.Products);
 
             var catalogDto = _mapper.Map<CatalogDto>(catalog);
 
@@ -60,6 +62,7 @@ namespace StoreApp.Bll.Services
 
         }
 
+      
         public async Task UpdateCatalog(int id, CatalogUpdateDto catalog)
         {
 

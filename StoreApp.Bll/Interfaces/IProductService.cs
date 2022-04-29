@@ -1,6 +1,7 @@
 ﻿using StoreApp.Common.Dtos.Products;
 using StoreApp.Common.Paginations;
 using StoreApp.Data.Interfaces;
+using StoreApp.Data.ViewModels;
 using StoreApp.Domain.Entity;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ namespace StoreApp.Bll.Interfaces
     {
         Task<ProductDto> CreateProduct(CreateProductDto product);
         Task<ProductDto> GetProductById(int id);
-        Task<IEnumerable<ProductDto>> GetAllProducts();
+        Task<IEnumerable<ProductDto>> GetAllProducts(PaginatedViewModel paginatedViewModel);
         Task UpdateProduct(int id, ProductUpdateDto product);
         Task DeleteProduct(int id);
         Task<PageRequest> GetPageProduct(int id);

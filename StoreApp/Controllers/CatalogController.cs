@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using StoreApp.Bll.Interfaces;
 using StoreApp.Common.Dtos.Catalogs;
+using StoreApp.Data.ViewModels;
 
 namespace StoreApp.Controllers
 {
@@ -10,10 +11,10 @@ namespace StoreApp.Controllers
     {
         private readonly ICatalogService _catalogService;
         private readonly ILogger<CatalogController> _logger;
-        public CatalogController(ICatalogService catalogService,ILogger<CatalogController> logger)
+        public CatalogController(ICatalogService catalogService, ILogger<CatalogController> logger)
         {
             _catalogService = catalogService;
-            _logger = logger; 
+            _logger = logger;
 
         }
 
@@ -24,12 +25,12 @@ namespace StoreApp.Controllers
 
             return Ok();
         }
-        
+
         [HttpGet("{id}")]
-        public async Task<ActionResult> GetById( int id)
+        public async Task<ActionResult> GetById(int id)
         {
-          var catalog=  await _catalogService.GetCatalogByID(id);
-            if(catalog == null)
+            var catalog = await _catalogService.GetCatalogByID(id);
+            if (catalog == null)
             {
                 return NotFound();
             }
@@ -37,12 +38,12 @@ namespace StoreApp.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> GetCatalog()
+        public async Task<ActionResult> GetCatalog([FromQuery] PaginatedViewModel paginatedModel)
         {
-            var catalogs = await _catalogService.GetAllCatalogs();
+            var catalogs = await _catalogService.GetAllCatalogs(paginatedModel);
             return Ok(catalogs);
         }
 
-        
+      
     }
 }

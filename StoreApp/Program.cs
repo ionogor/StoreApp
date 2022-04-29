@@ -43,7 +43,17 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 
 }
+
+app.UseCors(options => options
+                .AllowAnyOrigin()
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                
+
+);
+
 app.UseDefaultFiles();
+
 app.UseStaticFiles();
 
 //app.UseMiddleware<ErrorMiddleware>();
@@ -56,14 +66,9 @@ app.UseDefaultFiles();
 app.UseStaticFiles();
 app.UseRouting();
 
-app.UseCors(options => options
-                .WithOrigins(new []{"http://localhost:3000","http://localhost:8080","http://localhost:4200"})
-                .AllowAnyHeader()
-                .AllowAnyMethod()
-                .AllowCredentials()
-
-);
+app.UseAuthentication();
 app.UseAuthorization();
+
 
 app.MapControllers();
 

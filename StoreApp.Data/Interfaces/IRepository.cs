@@ -1,4 +1,5 @@
 ﻿using StoreApp.Common.Paginations;
+using StoreApp.Data.ViewModels;
 using StoreApp.Domain.Entity;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace StoreApp.Data.Interfaces
     {
         Task<T> GetById(int id);
 
-        IEnumerable<T> GetAll();
+        IEnumerable<T> GetAll(PaginatedViewModel paginatedViewModel);
 
         void Delete(T entity);
 

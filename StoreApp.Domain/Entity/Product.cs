@@ -17,9 +17,9 @@ namespace StoreApp.Domain.Entity
         public int CatalogId { get; set; }
         public virtual IEnumerable<Photo> Photos { get; set; }
         public virtual IEnumerable<Review> Reviews { get; set; }
-        public virtual Catalog? Catalog { get; set; }
+
         public int SupplierId { get; set; }
-        public virtual Supplier? Supplier { get; set; }
+       // public virtual Supplier? Supplier { get; set; }
        
     }
 }

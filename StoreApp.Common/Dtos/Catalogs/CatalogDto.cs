@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StoreApp.Domain.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -13,5 +14,7 @@ namespace StoreApp.Common.Dtos.Catalogs
        public int Id { get; set; }
         public string Name { get; set; }
         public string Avatar { get; set; }
+        public List<Product> Products { get; set; }
+
     }
 }

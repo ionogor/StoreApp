@@ -3,6 +3,7 @@ using Moq;
 using StoreApp.Bll.Interfaces;
 using StoreApp.Common.Dtos.Products;
 using StoreApp.Controllers;
+using StoreApp.Data.ViewModels;
 using StoreApp.Domain.Entity;
 using System.Collections.Generic;
 using System.Net;
@@ -25,10 +26,15 @@ namespace ProductUnitTest
             };
         public ProductTest()
         {
+            var paginatedViewModel = new PaginatedViewModel()
+            {
+                Page = 1,
+                Count = 10
+            };
             var mockService = new Mock<IProductService>();
 
          
-            mockService.Setup(x => x.GetAllProducts()).ReturnsAsync(new List<ProductDto>(listProduct));
+            mockService.Setup(x => x.GetAllProducts(paginatedViewModel)).ReturnsAsync(new List<ProductDto>(listProduct));
             mockService.Setup(x => x.GetProductById(It.IsAny<int>())).ReturnsAsync((int id) => listProduct.Find(x => x.Id == id));
             _productController = new ProductController(mockService.Object);
         }
