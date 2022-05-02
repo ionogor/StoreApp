@@ -14,6 +14,7 @@
             _next(context);
             if(context.Response.StatusCode ==403)
             {
+                // Access restricted!
                 context.Response.WriteAsync("Acces restrictionat");
             }
         }

@@ -1,5 +1,6 @@
 ﻿namespace StoreApp.Infrastucture.Middleware
 {
+    // Authentication !!!!
     public class Authentification
     {
         private RequestDelegate _next;
@@ -11,6 +12,7 @@
 
         public async Task Invoke(HttpContext context)
         {
+            // parola => Password!!!!
             var query  = context.Request.Query["parola"];
 
             if (string.IsNullOrEmpty(query))

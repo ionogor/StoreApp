@@ -15,6 +15,7 @@ namespace StoreApp.Domain.Entity
         public decimal Price { get; set; }
         public int Stock { get; set; }
         public int CatalogId { get; set; }
+        // TODO: add Catalog Catalog {get;set;}
         public virtual IEnumerable<Photo> Photos { get; set; }
         public virtual IEnumerable<Review> Reviews { get; set; }
 
