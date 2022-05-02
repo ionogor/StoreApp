@@ -7,6 +7,7 @@ using StoreApp.Data.Context;
 using StoreApp.Data.Interfaces;
 using StoreApp.Data.Repository;
 using StoreApp.Helpers;
+// Infrastructure!
 using StoreApp.Infrastucture.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -43,7 +44,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 
 }
-
+// TODO : add white list of allowed domains
+// Read them from appsettings
 app.UseCors(options => options
                 .AllowAnyOrigin()
                 .AllowAnyHeader()

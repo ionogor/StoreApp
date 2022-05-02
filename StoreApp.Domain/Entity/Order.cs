@@ -14,6 +14,9 @@ namespace StoreApp.Domain.Entity
         public decimal UnitPrice { get; set; }
         public decimal TotalPrice { get; set; }
         public DateTime OrderDate { get; set; }
+        // TODO: 
+        // Add new entity OrderProduct
+        // ProductId & OrderId
         public Product Products { get; set; }
         public IEnumerable<OrderDetail> OrderDetails { get; set; }
     }

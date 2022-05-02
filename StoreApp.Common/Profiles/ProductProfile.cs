@@ -20,6 +20,7 @@ namespace StoreApp.Common.Profiles
             CreateMap<Product, CreateProductDto>().ReverseMap();
             CreateMap<Product,ProductListDto>().ReverseMap();
 
+            // TODO: move to separate class
             // Catalog Mapp
 
             CreateMap<Catalog,CatalogDto>();

@@ -2,7 +2,7 @@
 using StoreApp.Bll.Interfaces;
 using StoreApp.Common.Dtos.Catalogs;
 using StoreApp.Data.ViewModels;
-
+// TODO: add authorization attributes
 namespace StoreApp.Controllers
 {
     [ApiController]

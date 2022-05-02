@@ -58,9 +58,6 @@ namespace StoreApp.Bll.Repositories
             var userDto = mapper.Map<UserDto>(user);
 
             return userDto;
-
-
-
         }
     }
 }

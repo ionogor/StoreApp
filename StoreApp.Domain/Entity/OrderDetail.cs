@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StoreApp.Domain.Entity
 {
-    
+    // rename to user order
     public class OrderDetail:BaseEntity
     {
         public int OrderId { get; set; }

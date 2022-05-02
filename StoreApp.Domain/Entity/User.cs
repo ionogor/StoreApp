@@ -12,6 +12,8 @@ namespace StoreApp.Domain.Entity
         public string Password { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
+        
+        // Rename to IsAdmin
         public bool Type { get; set; } = false; // 0 user 1 admin
         public IEnumerable<OrderDetail> OrderDetails { get; set; }
         public int? AddressId { get; set; }

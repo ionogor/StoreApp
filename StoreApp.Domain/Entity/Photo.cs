@@ -11,6 +11,8 @@ namespace StoreApp.Domain.Entity
     {
         [Required]
         public string Url { get; set; }
+        // TODO: add product id
+        // TODO: photo shouldn't be nullable
         public virtual Product? Product { get; set; }
     }
 }

@@ -6,11 +6,12 @@ namespace StoreApp.Helpers
 {
     public class JwtService
     {
+        // read from appsettings file
         string securityKey = "this is my custom Secret key for authentication";
         public string GenerateToken(int id)
         {
             var symmetricSecurityKey= new SymmetricSecurityKey(Encoding.UTF8.GetBytes(securityKey));
-
+            // credentials !!!
             var credintials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256Signature);
 
             var header = new JwtHeader(credintials);
