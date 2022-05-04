@@ -31,8 +31,7 @@ namespace StoreApp.Bll.Repositories
                 Login = userDto.Login,
                 Password =BCrypt.Net.BCrypt.HashPassword(userDto.Password),
                 Email = userDto.Email,
-                Type=userDto.Type,
-
+                IsAdmin=userDto.Type,
                 PhoneNumber=userDto.PhoneNumber,
 
 
@@ -58,9 +57,6 @@ namespace StoreApp.Bll.Repositories
             var userDto = mapper.Map<UserDto>(user);
 
             return userDto;
-
-
-
         }
     }
 }

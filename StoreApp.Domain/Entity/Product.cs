@@ -15,11 +15,12 @@ namespace StoreApp.Domain.Entity
         public decimal Price { get; set; }
         public int Stock { get; set; }
         public int CatalogId { get; set; }
-        public virtual IEnumerable<Photo> Photos { get; set; }
+        //public Photo Main { get; set; }
+        public Catalog Catalog { get; set; }
+        public IEnumerable<Photo>? Photos { get; set; }
         public virtual IEnumerable<Review> Reviews { get; set; }
-
         public int SupplierId { get; set; }
-       // public virtual Supplier? Supplier { get; set; }
+     
        
     }
 }

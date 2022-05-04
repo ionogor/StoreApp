@@ -48,7 +48,6 @@ namespace StoreApp.Bll.Services
         public async Task<IEnumerable<ProductDto>> GetAllProducts(PaginatedViewModel paginatedViewModel)
         {
             var productList = _repository.GetAll(paginatedViewModel);
-
             var productDtoList = _mapper.Map<List<ProductDto>>(productList);
             return productDtoList;
         }
@@ -84,8 +83,10 @@ namespace StoreApp.Bll.Services
 
         public async Task<ProductDto> GetProductById(int id)
         {
-            var products = await _repository.GetById(id);
-            var productDto = _mapper.Map<ProductDto>(products);
+
+            var productsPhoto = await _repository.GetByIdWithInclude<Product>(id, x => x.Photos);
+           // var products = await _repository.GetById(id);
+            var productDto = _mapper.Map<ProductDto>(productsPhoto);
             return productDto;
         }
 

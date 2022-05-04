@@ -24,7 +24,7 @@ namespace StoreApp.Data.Interfaces
         void AddRange(IEnumerable<T> entities);
 
         void SaveChangeAsync();
-
+        IQueryable<T> Read();
      
         Task<TEntity> GetByIdWithInclude<TEntity>(int id, params Expression<Func<TEntity, object>>[] includeProperties) where TEntity : BaseEntity;
        }

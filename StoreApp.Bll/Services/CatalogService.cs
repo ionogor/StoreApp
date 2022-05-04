@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using StoreApp.Bll.Interfaces;
 using StoreApp.Common.Dtos.Catalogs;
 using StoreApp.Common.Dtos.Products;
@@ -54,7 +55,10 @@ namespace StoreApp.Bll.Services
 
         public  async Task<CatalogDto> GetCatalogByID(int id)
         {
-            var catalog = await _repository.GetByIdWithInclude<Catalog>(id, catalog => catalog.Products);
+            //var catalog = await _repository.GetByIdWithInclude<Catalog>(id, catalog => catalog.Products);
+            var catalog = await _repository.Read()
+                         .Include(x => x.Products).ThenInclude(x => x.Photos)
+                         .FirstOrDefaultAsync(c => c.Id == id);
 
             var catalogDto = _mapper.Map<CatalogDto>(catalog);
 

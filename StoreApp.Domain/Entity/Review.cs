@@ -13,6 +13,7 @@ namespace StoreApp.Domain.Entity
         public string Comment { get; set; }
         public int NumStar { get; set; }
         public string VoteName { get; set; }
+        public int ProductId { get; set; }
         public virtual Product Product { get; set; }
     }
 }

@@ -11,7 +11,7 @@
 
         public async Task Invoke(HttpContext context)
         {
-            var query  = context.Request.Query["parola"];
+            var query  = context.Request.Query["password"];
 
             if (string.IsNullOrEmpty(query))
             {

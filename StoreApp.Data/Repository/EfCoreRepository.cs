@@ -62,6 +62,7 @@ namespace StoreApp.Data.Repository
         public async Task<T> GetByIdWithInclude<T>(int id, params Expression<Func<T, object>>[] includeProperties) where T : BaseEntity
         {
             var query = IncludeProperties(includeProperties);
+
             return await query.FirstOrDefaultAsync(entity => entity.Id == id);
         }
 
@@ -71,6 +72,11 @@ namespace StoreApp.Data.Repository
             var products = IncludeProperties(includeProperties);
 
             return (Task<IEnumerable<TEntity>>)products;
+        }
+
+        public IQueryable<T> Read()
+        {
+            return _context.Set<T>().AsQueryable();
         }
 
         public void SaveChangeAsync()

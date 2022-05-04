@@ -14,21 +14,12 @@ namespace StoreApp.Common.Profiles
     {
         public ProductProfile()
         {
-            CreateMap<Product, ProductDto>();
+            CreateMap<Product, ProductDto>()
+              .ForMember(x => x.PhotoPath, y => y.MapFrom(dest => dest.Photos.FirstOrDefault(x=>x.IsPrimary)));
             CreateMap<ProductUpdateDto, Product>().ReverseMap();
             CreateMap<Product, ProductListDto>();
             CreateMap<Product, CreateProductDto>().ReverseMap();
             CreateMap<Product,ProductListDto>().ReverseMap();
-
-            // Catalog Mapp
-
-            CreateMap<Catalog,CatalogDto>();
-          
-            CreateMap<CreateCatalogDto, Catalog>();
-            CreateMap<Catalog, CreateCatalogDto>();
-           
-
-
         }
     }
 }

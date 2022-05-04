@@ -31,7 +31,7 @@ namespace StoreApp.Bll.Services
                 Login=userUpdateDto.Login,
                 Password=BCrypt.Net.BCrypt.HashPassword(userUpdateDto.Password),
                 Email=userUpdateDto.Email,
-                Type=userUpdateDto.Type
+                IsAdmin=userUpdateDto.Type
             };
            //var user = _mapper.Map<User>(userUpdateDto);
             _repository.Add(newUser);

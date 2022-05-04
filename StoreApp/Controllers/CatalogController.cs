@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using StoreApp.Bll.Interfaces;
 using StoreApp.Common.Dtos.Catalogs;
 using StoreApp.Data.ViewModels;
@@ -15,14 +16,12 @@ namespace StoreApp.Controllers
         {
             _catalogService = catalogService;
             _logger = logger;
-
         }
 
         [HttpPost]
         public async Task<ActionResult> AddCatalog([FromBody] CreateCatalogDto catalogDto)
         {
             await _catalogService.CreateCatalog(catalogDto);
-
             return Ok();
         }
 

@@ -12,7 +12,8 @@ namespace StoreApp.Domain.Entity
         public string Phone { get; set; }
         public string HomePage { get; set; }
         public string Email { get; set; }
-        public Address? Adress { get; set; }
-        public IEnumerable<Product> Products { get; set; }
+        public int AddressId { get; set; }
+        public Address? Address { get; set; }
+        public IEnumerable<Product>? Products { get; set; }
     }
 }
