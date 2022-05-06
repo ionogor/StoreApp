@@ -45,9 +45,9 @@ namespace StoreApp.Data.Repository
 
         }
 
-        public  IEnumerable<T> GetAll(PaginatedViewModel paginatedViewModel)
+        public  IEnumerable<T> GetAll(PaginatedViewModel page)
         {
-            return  _context.Set<T>().OrderBy(x=>x.Id).Take(paginatedViewModel.Count).ToList();
+            return  _context.Set<T>().ToList();
         }
 
         

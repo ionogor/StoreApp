@@ -15,7 +15,7 @@ namespace StoreApp.Common.Profiles
         public ProductProfile()
         {
             CreateMap<Product, ProductDto>()
-              .ForMember(x => x.PhotoPath, y => y.MapFrom(dest => dest.Photos.FirstOrDefault(x=>x.IsPrimary)));
+                .ForMember(x => x.PhotoPath, y => y.MapFrom(dest => dest.Photos.Url));
             CreateMap<ProductUpdateDto, Product>().ReverseMap();
             CreateMap<Product, ProductListDto>();
             CreateMap<Product, CreateProductDto>().ReverseMap();

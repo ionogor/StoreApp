@@ -17,6 +17,6 @@ namespace StoreApp.Common.Dtos.Users
         public string Password { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
-        public bool Type { get; set; } // 0 user 1 admin
+        public bool IsAdmin { get; set; } // 0 user 1 admin
     }
 }

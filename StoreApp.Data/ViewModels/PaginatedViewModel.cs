@@ -8,7 +8,7 @@ namespace StoreApp.Data.ViewModels
 {
     public class PaginatedViewModel
     {
-        public int Count { get; set; } = 10;
+        public int Count { get; set; } = 12;
         public int Page { get; set; } = 1;
     }
 

@@ -31,7 +31,7 @@ namespace StoreApp.Bll.Repositories
                 Login = userDto.Login,
                 Password =BCrypt.Net.BCrypt.HashPassword(userDto.Password),
                 Email = userDto.Email,
-                IsAdmin=userDto.Type,
+                Type=userDto.IsAdmin,
                 PhoneNumber=userDto.PhoneNumber,
 
 

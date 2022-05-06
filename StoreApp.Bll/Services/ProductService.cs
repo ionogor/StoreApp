@@ -58,16 +58,17 @@ namespace StoreApp.Bll.Services
             var paginatedViewModel = new PaginatedViewModel()
             {
                 Page = page,
-                Count = 10
+                Count = 100
             };
-            var pageProductsResult = 2f;
-            var pageCount = Math.Ceiling(_repository.GetAll(paginatedViewModel).Count()/pageProductsResult);
+            var pageProductsResult = 12f;
+            var pageCount = Math.Ceiling(_repository.GetAll(paginatedViewModel).Count() / pageProductsResult);
 
             var productList = _repository.GetAll(paginatedViewModel)
-                .Skip((page-1)*(int)pageProductsResult).Take((int)pageProductsResult).ToList();
+                
+                .Skip((page-1)*(int)pageProductsResult)
+                .Take((int)pageProductsResult).ToList();
 
             var listProductDto = _mapper.Map<List<ProductListDto>>(productList);
-
 
             var productListDto = new PageRequest
             {

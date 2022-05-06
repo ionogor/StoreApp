@@ -14,7 +14,7 @@ namespace StoreApp.Data.Interfaces
     {
         Task<T> GetById(int id);
 
-        IEnumerable<T> GetAll(PaginatedViewModel paginatedViewModel);
+        IEnumerable<T> GetAll(PaginatedViewModel page);
 
         void Delete(T entity);
 

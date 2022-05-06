@@ -12,7 +12,7 @@ namespace StoreApp.Domain.Entity
         public string Password { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
-        public bool IsAdmin { get; set; } = false; // 0 user 1 admin
+        public bool Type { get; set; } = false; // 0 user 1 admin
         public IEnumerable<OrderDetail> OrderDetails { get; set; }
         public int? AddressId { get; set; }
         public Address? Address { get; set; }

@@ -2,16 +2,42 @@
 i:{00000000-0000-0000-0000-000000000000}:StoreApp.sln
 ++StoreApp
 i:{00000000-0000-0000-0000-000000000000}:StoreApp
-i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\bin\debug\net6.0\storeapp.dll
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\storeapp.csproj
 ++Connected Services 
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1288
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1344
 ++Dependencies
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1287
-i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:>1134
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1073
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:>782
-i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>783
-i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>998
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1343
+i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:>810
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>749
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:>947
+i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>950
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1185
+++Properties
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\properties\
+++wwwroot
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\wwwroot\
+++Controllers
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\controllers\
+++AccountController.cs
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\controllers\accountcontroller.cs
+++CatalogController.cs
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\controllers\catalogcontroller.cs
+++ProductController.cs
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\controllers\productcontroller.cs
+++Helpers
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\helpers\
+++JwtService.cs
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\helpers\jwtservice.cs
+++Infrastucture
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\infrastucture\
+++appsettings.json
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\appsettings.json
+++Program.cs
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\program.cs
+++README.md
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\readme.md
+++No service dependencies discovered
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1345
 ++Analyzers
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:analyzers
 i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:analyzers
@@ -33,74 +59,20 @@ i:{961055ab-0ea9-44e4-920c-059642abc8ab}:packages
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:packages
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:packages
 i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:packages
-++BCrypt (1.0.0)
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1407
-++BCrypt.Net-Next (4.0.3)
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1409
-i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>1431
-++Microsoft.AspNetCore.Authentication.Cookies (2.2.0)
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1405
-i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:>1401
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1403
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:>1402
-i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>1404
-i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1406
-++Microsoft.AspNetCore.Authentication.Core (2.2.0)
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1399
-i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:>1395
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1397
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:>1396
-i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>1398
-i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1400
-++Microsoft.EntityFrameworkCore.Design (6.0.4)
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1383
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1326
-++Microsoft.EntityFrameworkCore.SqlServer (6.0.4)
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1382
-i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:>1309
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1324
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:>1308
-i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>1338
-i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1358
-++Swashbuckle.AspNetCore (6.3.1)
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1408
 ++Projects
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:projects
 i:{961055ab-0ea9-44e4-920c-059642abc8ab}:projects
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:projects
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:projects
 i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:projects
-++StoreApp.Bll
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\bin\debug\net6.0\storeapp.bll.dll
-i:{00000000-0000-0000-0000-000000000000}:StoreApp.Bll
-++StoreApp.Data
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\bin\debug\net6.0\storeapp.data.dll
-i:{00000000-0000-0000-0000-000000000000}:StoreApp.Data
-i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\storeapp.data.csproj
-++Properties
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\properties\
-++wwwroot
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\wwwroot\
-++Controllers
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\controllers\
-++AccountController.cs
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\controllers\accountcontroller.cs
-++CatalogController.cs
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\controllers\catalogcontroller.cs
-++ProductController.cs
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\controllers\productcontroller.cs
-++Infrastucture
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\infrastucture\
+++launchSettings.json
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\properties\launchsettings.json
+++index.html
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\wwwroot\index.html
 ++Middleware
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\infrastucture\middleware\
-++appsettings.json
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\appsettings.json
-++Program.cs
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\program.cs
-++README.md
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\readme.md
-++No service dependencies discovered
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1289
+++appsettings.Development.json
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\appsettings.development.json
 ++Microsoft.AspNetCore.Analyzers
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
 ++Microsoft.AspNetCore.App.Analyzers
@@ -161,22 +133,58 @@ i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\st
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\microsoft.netcore.app
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\microsoft.netcore.app
 i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:d:\internship amdaris\proiectamdaris\storeapp\productunittest\microsoft.netcore.app
-++launchSettings.json
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\properties\launchsettings.json
-++index.html
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\wwwroot\index.html
+++BCrypt (1.0.0)
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1362
+++BCrypt.Net-Next (4.0.3)
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1363
+i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>1436
+++Microsoft.AspNetCore.Authentication.Cookies (2.2.0)
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1364
+i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:>1406
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1380
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:>1394
+i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>1438
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1417
+++Microsoft.AspNetCore.Authentication.Core (2.2.0)
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1357
+i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:>1405
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1377
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:>1393
+i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>1434
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1415
+++Microsoft.AspNetCore.Cors (2.2.0)
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1361
+++Microsoft.EntityFrameworkCore.Design (6.0.4)
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1358
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1378
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.4)
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1356
+i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:>1404
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1375
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:>1391
+i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>1432
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1414
+++Swashbuckle.AspNetCore (6.3.1)
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1360
+++System.IdentityModel.Tokens.Jwt (6.17.0)
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1359
+++StoreApp.Bll
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\storeapp.bll.csproj
+i:{00000000-0000-0000-0000-000000000000}:StoreApp.Bll
+++StoreApp.Data
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\storeapp.data.csproj
+i:{00000000-0000-0000-0000-000000000000}:StoreApp.Data
+i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\bin\debug\net6.0\storeapp.data.dll
 ++Authentification.cs
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\infrastucture\middleware\authentification.cs
 ++ErrorMiddleware.cs
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\infrastucture\middleware\errormiddleware.cs
 ++Routing.cs
 i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\infrastucture\middleware\routing.cs
-++appsettings.Development.json
-i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:d:\internship amdaris\proiectamdaris\storeapp\storeapp\appsettings.development.json
 ++StoreApp.Domain
 i:{00000000-0000-0000-0000-000000000000}:StoreApp.Domain
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.domain\bin\debug\net6.0\storeapp.domain.dll
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.domain\bin\debug\net6.0\storeapp.domain.dll
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.domain\storeapp.domain.csproj
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.domain\storeapp.domain.csproj
 ++Entity
 i:{3d2c61a8-0231-4ad4-91e8-0d73715a2d40}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.domain\entity\
 ++Address.cs
@@ -226,54 +234,52 @@ i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\st
 i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\repository\efcorerepository.cs
 ++Seed
 i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\seed\
+++Seed.cs
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\seed\seed.cs
+++ViewModels
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\viewmodels\
+++PaginatedViewModel.cs
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\viewmodels\paginatedviewmodel.cs
 ++App.config
 i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\app.config
 ++20220415074855_Initial.cs
 i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\migrations\20220415074855_initial.cs
+++20220426121112_ChangeLoginType.cs
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\migrations\20220426121112_changelogintype.cs
+++20220426123555_ChangeLoginType2.cs
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\migrations\20220426123555_changelogintype2.cs
 ++GlobalContextModelSnapshot.cs
 i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\migrations\globalcontextmodelsnapshot.cs
-++Seed.cs
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\seed\seed.cs
 ++Microsoft.EntityFrameworkCore (6.0.4)
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1323
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1374
 ++Microsoft.EntityFrameworkCore.Tools (6.0.4)
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1328
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1381
 ++System.Configuration.ConfigurationManager (6.0.0)
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1327
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1379
 ++System.Diagnostics.Tools (4.3.0)
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1325
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:>1376
 ++StoreApp.Common
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\bin\debug\net6.0\storeapp.common.dll
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\storeapp.common.csproj
 i:{00000000-0000-0000-0000-000000000000}:StoreApp.Common
-i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\storeapp.common.csproj
+i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\bin\debug\net6.0\storeapp.common.dll
 ++20220415074855_Initial.Designer.cs
 i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\migrations\20220415074855_initial.designer.cs
+++20220426121112_ChangeLoginType.Designer.cs
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\migrations\20220426121112_changelogintype.designer.cs
+++20220426123555_ChangeLoginType2.Designer.cs
+i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\migrations\20220426123555_changelogintype2.designer.cs
 ++Dtos
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\
 ++Catalogs
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\catalogs\
-++Products
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\products\
-++Users
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\users\
-++UserDto.cs
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\users\userdto.cs
-++UserListDto.cs
-++UserUpdateDto.cs
-++Exceptions
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\exceptions\
-++Paginations
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\paginations\
-++Profiles
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\profiles\
-++ProductProfile.cs
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\profiles\productprofile.cs
 ++CatalogDto.cs
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\catalogs\catalogdto.cs
 ++CatalogUpdateDto.cs
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\catalogs\catalogupdatedto.cs
 ++CreateCatalogDto.cs
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\catalogs\createcatalogdto.cs
+++Products
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\products\
 ++CreateProductDto.cs
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\products\createproductdto.cs
 ++ProductDto.cs
@@ -282,6 +288,24 @@ i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\st
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\products\productlistdto.cs
 ++ProductUpdateDto.cs
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\products\productupdatedto.cs
+++Users
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\users\
+++CreateUserDto.cs
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\users\createuserdto.cs
+++LoginDto.cs
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\users\logindto.cs
+++UserDto.cs
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\users\userdto.cs
+++Exceptions
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\exceptions\
+++Paginations
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\paginations\
+++Profiles
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\profiles\
+++ProductProfile.cs
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\profiles\productprofile.cs
+++UserProfile.cs
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\profiles\userprofile.cs
 ++ApiException.cs
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\exceptions\apiexception.cs
 ++ApiExceptionFilter.cs
@@ -293,25 +317,32 @@ i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\st
 ++PaginateResult.cs
 i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\paginations\paginateresult.cs
 ++AutoMapper.Extensions.Microsoft.DependencyInjection (11.0.0)
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:>1310
-i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>1339
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:>1392
+i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>1433
 ++Microsoft.AspNetCore.Mvc.Core (2.2.5)
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:>1311
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:>1395
 ++ICatalogService.cs
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\interfaces\icatalogservice.cs
 ++IProductService.cs
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\interfaces\iproductservice.cs
-++IUserService.cs
+++IUserRepository.cs
+i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\interfaces\iuserrepository.cs
+++Repositories
+i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\repositories\
+++UserRepository.cs
+i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\repositories\userrepository.cs
 ++Services
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\services\
 ++CatalogService.cs
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\services\catalogservice.cs
 ++ProductService.cs
 i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\services\productservice.cs
+++UserService.cs
+i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\services\userservice.cs
 ++AutoMapper (11.0.1)
-i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>1341
+i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>1437
 ++Microsoft.AspNet.WebApi.Core (5.2.8)
-i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>1340
+i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:>1435
 ++ProductUnitTest
 i:{00000000-0000-0000-0000-000000000000}:ProductUnitTest
 ++ProductTest.cs
@@ -319,38 +350,16 @@ i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:d:\internship amdaris\proiectamdaris\st
 ++xunit.analyzers
 i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:c:\users\user\.nuget\packages\xunit.analyzers\0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll
 ++coverlet.collector (3.1.0)
-i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1362
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1420
 ++Microsoft.NET.Test.Sdk (16.11.0)
-i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1357
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1413
 ++Moq (4.17.2)
-i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1361
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1419
 ++xunit (2.4.1)
-i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1359
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1416
 ++xunit.runner.visualstudio (2.4.3)
-i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1360
-++20220426121112_ChangeLoginType.cs
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\migrations\20220426121112_changelogintype.cs
-++20220426121112_ChangeLoginType.Designer.cs
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\migrations\20220426121112_changelogintype.designer.cs
-++UserProfile.cs
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\profiles\userprofile.cs
-++20220426123555_ChangeLoginType2.cs
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\migrations\20220426123555_changelogintype2.cs
-++20220426123555_ChangeLoginType2.Designer.cs
-i:{961055ab-0ea9-44e4-920c-059642abc8ab}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.data\migrations\20220426123555_changelogintype2.designer.cs
-++UserService.cs
-i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\services\userservice.cs
-++CreateUserDto.cs
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\users\createuserdto.cs
-++IUserRepository.cs
-i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\interfaces\iuserrepository.cs
-++NewFolder
-++ReposiroryUser
-++RepositoryUser
-++UserRepository.cs
-i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\repositories\userrepository.cs
-++Repositories
-i:{e8645f4d-67d6-45a4-878e-956c6b7152b9}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.bll\repositories\
-++LoginUser.cs
-++LoginUserDto.cs
-i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\dtos\users\loginuserdto.cs
+i:{9ba11ccd-cb09-459b-b5d2-423fa5de3102}:>1418
+++CatalogProfile.cs
+i:{77a93da0-2f78-4ff6-aef8-9dd6aec5ab08}:d:\internship amdaris\proiectamdaris\storeapp\storeapp.common\profiles\catalogprofile.cs
+++Microsoft.AspNetCore.Authentication.JwtBearer (6.0.4)
+i:{cf345aae-e81e-4f99-aadc-7f57531ac6e7}:>1479

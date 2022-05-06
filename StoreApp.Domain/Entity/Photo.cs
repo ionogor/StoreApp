@@ -12,7 +12,7 @@ namespace StoreApp.Domain.Entity
         [Required]
         public string? Url { get; set; }
         public int ProductId { get; set; }
-        public bool IsPrimary { get; set; }
-        public virtual Product? Product { get; set; }
+       // public bool IsPrimary { get; set; }
+       // public virtual Product? Product { get; set; }
     }
 }

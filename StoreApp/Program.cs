@@ -11,10 +11,22 @@ using StoreApp.Helpers;
 
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CORSPolicy",
+        builder =>
+        {
+            builder
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials()
+            .WithOrigins("http://localhost:3000", "https://appname.azurestaticapps.net");
+        });
+});
 // Add services to the container.
 
-  builder.Services.AddDbContext<GlobalContext>(options =>
+builder.Services.AddDbContext<GlobalContext>(options =>
   options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
 builder.Services.AddControllers();
@@ -43,14 +55,20 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseAuthentication();
+app.UseAuthorization();
+//app.UseCors(options => options
 
-app.UseCors(options => options
-                .WithOrigins(new[] {"http://localhost:3000","http://localhost:8090"})
-                .AllowAnyOrigin()
-                .AllowAnyHeader()
-                .AllowAnyMethod()
-);
+//                .AllowAnyOrigin()
+//                 .AllowAnyMethod()
+//                .AllowAnyHeader()
+//                .AllowCredentials()
+//                .WithOrigins(new[] { "http://localhost:3000", "http://localhost:8090" })
+//);
 
+
+
+app.UseCors("CORSPolicy");
 app.UseDefaultFiles();
 app.UseStaticFiles();
 //app.UseMiddleware<ErrorMiddleware>();
@@ -60,10 +78,6 @@ app.UseHttpsRedirection();
 app.UseDefaultFiles();
 app.UseStaticFiles();
 app.UseRouting();
-
-app.UseAuthentication();
-app.UseAuthorization();
-
 
 app.MapControllers();
 

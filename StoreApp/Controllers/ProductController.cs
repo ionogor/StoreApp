@@ -22,11 +22,6 @@ namespace StoreApp.Controllers
         [HttpGet("{id}")] // person/service/2
         public async Task<IActionResult> GetProductById(int id)
         {
-            //if(id==0 || id<1)
-            //{
-            //    _logger.LogWarning("Id mai mic decit 1 sau este egal cu 0");
-            //}
-            //  var product = await _productService.GetProductById(id);
 
             var product = await _productService.GetProductById(id);
 
@@ -78,8 +73,8 @@ namespace StoreApp.Controllers
             await _productService.DeleteProduct(id);
         }
 
-       [HttpGet("/productpage/{page}")]
-       public async Task<IActionResult> GetPageProduct(int page)
+        [HttpGet("/productpage/{page}")]
+        public async Task<IActionResult> GetPageProduct(int page)
         {
             return Ok(await _productService.GetPageProduct(page));
         }
