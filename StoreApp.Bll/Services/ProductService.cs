@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using StoreApp.Bll.Interfaces;
 using StoreApp.Common.Dtos.Products;
 using StoreApp.Common.Exceptions;
@@ -85,8 +86,12 @@ namespace StoreApp.Bll.Services
         public async Task<ProductDto> GetProductById(int id)
         {
 
-            var productsPhoto = await _repository.GetByIdWithInclude<Product>(id, x => x.Photos);
-           // var products = await _repository.GetById(id);
+            // var productsPhoto = await _repository.GetByIdWithInclude<Product>(id, x => x.Photos);
+            var productsPhoto = await _repository.Read()
+                           .Include(x => x.Catalog).ThenInclude(x => x.Products).ThenInclude(x=>x.Reviews)
+                           .FirstOrDefaultAsync(c => c.Id == id);
+
+            // var products = await _repository.GetById(id);
             var productDto = _mapper.Map<ProductDto>(productsPhoto);
             return productDto;
         }
@@ -97,7 +102,7 @@ namespace StoreApp.Bll.Services
 
             //if (produs.Title == product.Title)
             //{
-            //    throw new EntryAlreadyExistsException("Title corespunde cu cel actual!");
+            //    throw new EntryAlreadyExistsException("Error");
             //}
 
             var oneProduct = await _repository.GetById(id);

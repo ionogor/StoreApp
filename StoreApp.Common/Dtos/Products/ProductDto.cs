@@ -23,5 +23,6 @@ namespace StoreApp.Common.Dtos.Products
         public string? PhotoPath { get; set; }
         public string CatalogName{ get; set; }
         public int SupplierId { get; set; }
+        public List<Review> Reviews { get; set; }
     }
 }
