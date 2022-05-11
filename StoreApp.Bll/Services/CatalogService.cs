@@ -44,11 +44,19 @@ namespace StoreApp.Bll.Services
 
         }
 
-        public async Task<IEnumerable<CatalogDto>> GetAllCatalogs(PaginatedViewModel paginatedView)
+        public async Task<IEnumerable<CatalogDto>> GetAllCatalogs(int page)
         {
-           var catalogs = _repository.GetAll(paginatedView);
+           //var catalogs = _repository.GetAll(paginatedView);
 
-            var catalogsDto = _mapper.Map<List<CatalogDto>>(catalogs);
+           // var catalogsDto = _mapper.Map<List<CatalogDto>>(catalogs);
+
+            var pageProductsResult = 5f;
+            var count = _repository.Read().Include(x => x.Products).Count();
+            var pageCount = Math.Ceiling(count/pageProductsResult);
+            var productList = _repository.Read().Include(x => x.Products)
+              .Skip((page-1)*(int)pageProductsResult)
+              .Take((int)pageProductsResult).ToList();
+            var catalogsDto = _mapper.Map<List<CatalogDto>>(productList);
 
             return catalogsDto;
         }

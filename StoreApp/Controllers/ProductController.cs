@@ -19,7 +19,7 @@ namespace StoreApp.Controllers
         }
 
         // product/id
-        [HttpGet("{id}")] // person/service/2
+        [HttpGet("{id}")] 
         public async Task<IActionResult> GetProductById(int id)
         {
 
@@ -74,9 +74,9 @@ namespace StoreApp.Controllers
         }
 
         [HttpGet("/productpage/{page}")]
-        public async Task<IActionResult> GetPageProduct(int page)
+        public async Task<IActionResult> GetPageProduct(int page,int id)
         {
-            return Ok(await _productService.GetPageProduct(page));
+            return Ok(await _productService.GetPageProduct(page,id));
         }
     }
 }

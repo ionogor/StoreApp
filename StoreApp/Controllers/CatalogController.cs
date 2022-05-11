@@ -37,9 +37,9 @@ namespace StoreApp.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> GetCatalog([FromQuery] PaginatedViewModel paginatedModel)
+        public async Task<ActionResult> GetCatalog(int page)
         {
-            var catalogs = await _catalogService.GetAllCatalogs(paginatedModel);
+            var catalogs = await _catalogService.GetAllCatalogs(page);
             return Ok(catalogs);
         }
 

@@ -47,7 +47,8 @@ namespace StoreApp.Data.Repository
 
         public  IEnumerable<T> GetAll(PaginatedViewModel page)
         {
-            return  _context.Set<T>().ToList();
+             return  _context.Set<T>().ToList();
+           // return _context.Set<T>().AsQueryable();
         }
 
         

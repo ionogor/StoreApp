@@ -13,7 +13,7 @@ namespace StoreApp.Bll.Interfaces
     {
         Task<CatalogDto> CreateCatalog(CreateCatalogDto product);
         Task<CatalogDto> GetCatalogByID(int id);
-        Task<IEnumerable<CatalogDto>> GetAllCatalogs(PaginatedViewModel paginatedView);
+        Task<IEnumerable<CatalogDto>> GetAllCatalogs(int page);
         Task UpdateCatalog(int id, CatalogUpdateDto product);
         Task DeleteCatalog(int id);
 

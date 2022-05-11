@@ -54,18 +54,12 @@ namespace StoreApp.Bll.Services
         }
 
 
-        public async Task<PageRequest> GetPageProduct(int page)
+        public async Task<PageRequest> GetPageProduct(int page, int IdCatalog)
         {
-            var paginatedViewModel = new PaginatedViewModel()
-            {
-                Page = page,
-                Count = 100
-            };
-            var pageProductsResult = 12f;
-            var pageCount = Math.Ceiling(_repository.GetAll(paginatedViewModel).Count() / pageProductsResult);
-
-            var productList = _repository.GetAll(paginatedViewModel)
-                
+            var pageProductsResult = 8f;
+            var count = _repository.Read().Include(x => x.Catalog).Where(x => x.CatalogId == IdCatalog).Count();
+            var pageCount = Math.Ceiling(count/pageProductsResult);
+              var productList = _repository.Read().Include(x=>x.Catalog).Where(x=>x.CatalogId == IdCatalog)
                 .Skip((page-1)*(int)pageProductsResult)
                 .Take((int)pageProductsResult).ToList();
 
