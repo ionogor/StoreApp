@@ -1,4 +1,5 @@
-﻿using StoreApp.Common.Dtos.Users;
+﻿using Microsoft.AspNetCore.Mvc;
+using StoreApp.Common.Dtos.Users;
 using StoreApp.Domain.Entity;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace StoreApp.Bll.Interfaces
     public interface IUserRepository
     {
         Task<User> GetByEmail(string email);
-        Task<UserDto> AddUser(CreateUserDto userDto);
+        Task<UserDto>AddUser(CreateUserDto userDto);
         Task<UserDto> GetById(int id);
     }
 }

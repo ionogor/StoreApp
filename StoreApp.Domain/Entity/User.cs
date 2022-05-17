@@ -15,6 +15,7 @@ namespace StoreApp.Domain.Entity
         public bool Type { get; set; } = false; // 0 user 1 admin
         public IEnumerable<OrderDetail> OrderDetails { get; set; }
         public int? AddressId { get; set; }
-        public Address? Address { get; set; }
+        public virtual Address? Address { get; set; }
+        
     }
 }

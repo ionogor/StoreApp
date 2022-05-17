@@ -162,3 +162,4 @@ D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\obj\Debug\net6.0\P
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\obj\Debug\net6.0\ref\ProductUnitTest.dll
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\DevOne.Security.Cryptography.BCrypt.dll
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\BCrypt.Net-Next.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

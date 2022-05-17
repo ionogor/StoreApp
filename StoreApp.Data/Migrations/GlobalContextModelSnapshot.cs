@@ -141,7 +141,7 @@ namespace StoreApp.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int?>("ProductId")
+                    b.Property<int>("ProductId")
                         .HasColumnType("int");
 
                     b.Property<string>("Url")
@@ -150,7 +150,8 @@ namespace StoreApp.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex("ProductId")
+                        .IsUnique();
 
                     b.ToTable("Photos");
                 });
@@ -240,7 +241,8 @@ namespace StoreApp.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex("ProductId")
+                        .IsUnique();
 
                     b.ToTable("Reviews");
                 });
@@ -281,7 +283,7 @@ namespace StoreApp.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int?>("AdressId")
+                    b.Property<int>("AddressId")
                         .HasColumnType("int");
 
                     b.Property<string>("Email")
@@ -302,7 +304,7 @@ namespace StoreApp.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AdressId");
+                    b.HasIndex("AddressId");
 
                     b.ToTable("Suppliers");
 
@@ -310,6 +312,7 @@ namespace StoreApp.Data.Migrations
                         new
                         {
                             Id = 1,
+                            AddressId = 0,
                             Email = "test@test.com",
                             HomePage = "www.domain.com",
                             Name = "Dell",
@@ -318,6 +321,7 @@ namespace StoreApp.Data.Migrations
                         new
                         {
                             Id = 2,
+                            AddressId = 0,
                             Email = "office@apple.com",
                             HomePage = "www.apple.com",
                             Name = "Apple",
@@ -326,6 +330,7 @@ namespace StoreApp.Data.Migrations
                         new
                         {
                             Id = 3,
+                            AddressId = 0,
                             Email = "office@acer.com",
                             HomePage = "www.acer.com",
                             Name = "Acer",
@@ -357,7 +362,11 @@ namespace StoreApp.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Test")
+                        .HasColumnType("int");
 
                     b.Property<bool>("Type")
                         .HasColumnType("bit");
@@ -401,11 +410,11 @@ namespace StoreApp.Data.Migrations
 
             modelBuilder.Entity("StoreApp.Domain.Entity.Photo", b =>
                 {
-                    b.HasOne("StoreApp.Domain.Entity.Product", "Product")
-                        .WithMany("Photos")
-                        .HasForeignKey("ProductId");
-
-                    b.Navigation("Product");
+                    b.HasOne("StoreApp.Domain.Entity.Product", null)
+                        .WithOne("Photos")
+                        .HasForeignKey("StoreApp.Domain.Entity.Photo", "ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("StoreApp.Domain.Entity.Product", b =>
@@ -416,22 +425,20 @@ namespace StoreApp.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("StoreApp.Domain.Entity.Supplier", "Supplier")
+                    b.HasOne("StoreApp.Domain.Entity.Supplier", null)
                         .WithMany("Products")
                         .HasForeignKey("SupplierId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Catalog");
-
-                    b.Navigation("Supplier");
                 });
 
             modelBuilder.Entity("StoreApp.Domain.Entity.Review", b =>
                 {
                     b.HasOne("StoreApp.Domain.Entity.Product", "Product")
-                        .WithMany("Reviews")
-                        .HasForeignKey("ProductId")
+                        .WithOne("Reviews")
+                        .HasForeignKey("StoreApp.Domain.Entity.Review", "ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -440,11 +447,13 @@ namespace StoreApp.Data.Migrations
 
             modelBuilder.Entity("StoreApp.Domain.Entity.Supplier", b =>
                 {
-                    b.HasOne("StoreApp.Domain.Entity.Address", "Adress")
+                    b.HasOne("StoreApp.Domain.Entity.Address", "Address")
                         .WithMany("Suppliers")
-                        .HasForeignKey("AdressId");
+                        .HasForeignKey("AddressId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("Adress");
+                    b.Navigation("Address");
                 });
 
             modelBuilder.Entity("StoreApp.Domain.Entity.User", b =>
@@ -475,9 +484,11 @@ namespace StoreApp.Data.Migrations
 
             modelBuilder.Entity("StoreApp.Domain.Entity.Product", b =>
                 {
-                    b.Navigation("Photos");
+                    b.Navigation("Photos")
+                        .IsRequired();
 
-                    b.Navigation("Reviews");
+                    b.Navigation("Reviews")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("StoreApp.Domain.Entity.Supplier", b =>

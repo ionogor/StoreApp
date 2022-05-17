@@ -12,8 +12,8 @@ namespace StoreApp.Domain.Entity
         public string City { get; set; }
         public string ZipCode { get; set; }
         public string Country { get; set; }
-        public IEnumerable<Supplier> Suppliers { get; set; }
-        public IEnumerable<User> Users { get; set; }
+        //public IEnumerable<Supplier> Suppliers { get; set; }
+        //public IEnumerable<User> Users { get; set; }
 
 
     }

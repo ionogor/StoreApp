@@ -23,17 +23,17 @@ namespace StoreApp.Bll.Services
             this._repository = repository;
             this._mapper = mapper;
         }
-        public async Task<UserDto> AddUser([FromBody]CreateUserDto userUpdateDto)
+        public async Task<UserDto> AddUser([FromBody] CreateUserDto userUpdateDto)
         {
 
             var newUser = new User()
             {
-                Login=userUpdateDto.Login,
-                Password=BCrypt.Net.BCrypt.HashPassword(userUpdateDto.Password),
-                Email=userUpdateDto.Email,
-                Type=userUpdateDto.IsAdmin
+                Login=userUpdateDto.User.Login,
+                Password=BCrypt.Net.BCrypt.HashPassword(userUpdateDto.User.Password),
+                Email=userUpdateDto.User.Email,
+                Type=userUpdateDto.User.Type
             };
-           //var user = _mapper.Map<User>(userUpdateDto);
+            //var user = _mapper.Map<User>(userUpdateDto);
             _repository.Add(newUser);
             _repository.SaveChangeAsync();
             var userDto = _mapper.Map<UserDto>(newUser);
@@ -41,7 +41,7 @@ namespace StoreApp.Bll.Services
             return userDto;
         }
 
-      
+
 
         public Task<UserDto> GetUser(int id)
         {

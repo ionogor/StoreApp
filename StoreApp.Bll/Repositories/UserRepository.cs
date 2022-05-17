@@ -1,5 +1,10 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 using StoreApp.Bll.Interfaces;
+using StoreApp.Common.Dtos.Address;
 using StoreApp.Common.Dtos.Users;
 using StoreApp.Data.Context;
 using StoreApp.Domain.Entity;
@@ -24,25 +29,36 @@ namespace StoreApp.Bll.Repositories
 
         }
 
-        public async Task<UserDto> AddUser(CreateUserDto userDto)
+        public async Task<UserDto> AddUser([FromBody]CreateUserDto userDto)
         {
-            var user = new User
+           
+
+            using (IDbContextTransaction transaction = _context.Database.BeginTransaction())
             {
-                Login = userDto.Login,
-                Password =BCrypt.Net.BCrypt.HashPassword(userDto.Password),
-                Email = userDto.Email,
-                Type=userDto.IsAdmin,
-                PhoneNumber=userDto.PhoneNumber,
+                try
+                {
+                    Address address = mapper.Map<Address>(userDto.Address);
+                    _context.Addresses.Add(address);
+
+                    await _context.SaveChangesAsync();
+
+                    User user = mapper.Map<User>(userDto.User);
+                    user.AddressId=address.Id;
+                    _context.Users.Add(user);
+                    await _context.SaveChangesAsync();
+
+                    transaction.Commit();
+
+                }
+                catch (Exception)
+                {
+
+                    transaction.Rollback();
+                }
+            }
 
 
-            };
-
-            _context.Add(user);
-            _context.SaveChanges();
-
-            var userDtos = mapper.Map<UserDto>(user);
-
-            return userDtos;
+            return userDto.User;
         }
 
         public async Task<User> GetByEmail(string email)

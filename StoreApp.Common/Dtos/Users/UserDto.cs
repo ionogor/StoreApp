@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StoreApp.Domain.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -12,12 +13,11 @@ namespace StoreApp.Common.Dtos.Users
     {
        
         public string Login { get; set; }
-
-        [JsonIgnore]
         public string Password { get; set; }
-   
         public string PhoneNumber { get; set; }
         public bool Type { get; set; } // 0 user 1 admin
+        public string Email { get; set; }
+        public int AddressId { get; set; }
 
     }
 }
