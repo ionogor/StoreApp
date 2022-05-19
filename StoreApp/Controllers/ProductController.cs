@@ -57,7 +57,7 @@ namespace StoreApp.Controllers
             return CreatedAtAction(nameof(GetProductById), new { id = productDto.Title }, productDto);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("EditProduct/{id}")]
         [ApiExceptionFilter]
         public async Task<IActionResult> UpdateProduct(int id, [FromBody] ProductUpdateDto product)
         {
@@ -67,10 +67,10 @@ namespace StoreApp.Controllers
         }
 
 
-        [HttpDelete("{id}")]
-        public async Task DeteleProduct(int id)
+        [HttpDelete("Delete/{id}")]
+        public async Task<ActionResult> DeteleProduct(int id)
         {
-            await _productService.DeleteProduct(id);
+           return Ok( await _productService.DeleteProduct(id));
         }
 
         [HttpGet("/productpage/{page}")]

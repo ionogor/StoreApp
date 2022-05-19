@@ -17,7 +17,7 @@ namespace StoreApp.Bll.Interfaces
         Task<ProductDto> GetProductById(int id);
         Task<IEnumerable<ProductDto>> GetAllProducts(PaginatedViewModel paginatedViewModel);
         Task UpdateProduct(int id, ProductUpdateDto product);
-        Task DeleteProduct(int id);
+        Task<Product> DeleteProduct(int id);
         Task<PageRequest> GetPageProduct(int page,int IdCatalog);
        
 

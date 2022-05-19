@@ -40,10 +40,21 @@ namespace StoreApp.Bll.Services
             return productDto;
         }
 
-        public async Task DeleteProduct(int id)
+        public async Task<Product> DeleteProduct(int id)
         {
             var entity = await _repository.GetById(id);
-            _repository.Delete(entity);
+            if(entity != null)
+            {
+                _repository.Delete(entity);
+            }
+            else
+            {
+                throw new ArgumentException("Product not exist!");
+            }
+
+            return entity;
+            
+
         }
 
         public async Task<IEnumerable<ProductDto>> GetAllProducts(PaginatedViewModel paginatedViewModel)

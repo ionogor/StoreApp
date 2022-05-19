@@ -35,6 +35,7 @@ namespace StoreApp.Bll.Repositories
 
             using (IDbContextTransaction transaction = _context.Database.BeginTransaction())
             {
+               
                 try
                 {
                     Address address = mapper.Map<Address>(userDto.Address);
@@ -43,6 +44,7 @@ namespace StoreApp.Bll.Repositories
                     await _context.SaveChangesAsync();
 
                     User user = mapper.Map<User>(userDto.User);
+                    user.Password=BCrypt.Net.BCrypt.HashPassword(userDto.User.Password);
                     user.AddressId=address.Id;
                     _context.Users.Add(user);
                     await _context.SaveChangesAsync();
