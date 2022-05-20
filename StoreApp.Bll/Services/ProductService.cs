@@ -57,6 +57,18 @@ namespace StoreApp.Bll.Services
 
         }
 
+        public async Task<List<ProductDto>> FindProduct(string q)
+        {
+        
+            var product = _repository.Read().ToList();
+            
+            var query = product.FindAll(x => x.Title.ToLower().Contains(q.ToLower())).ToList();
+
+             var result= _mapper.Map<List<ProductDto>>(query);
+
+            return result;
+        }
+
         public async Task<IEnumerable<ProductDto>> GetAllProducts(PaginatedViewModel paginatedViewModel)
         {
             var productList = _repository.GetAll(paginatedViewModel);

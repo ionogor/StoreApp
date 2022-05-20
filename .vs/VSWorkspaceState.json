@@ -8,6 +8,7 @@
     "\\StoreApp.Common\\Profiles",
     "\\StoreApp.Data",
     "\\StoreApp.Data\\Seed",
+    "\\StoreApp\\Controllers",
     "\\StoreApp\\Helpers"
   ],
   "SelectedNode": "\\StoreApp.sln",

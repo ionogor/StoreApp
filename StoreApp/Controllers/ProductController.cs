@@ -33,6 +33,15 @@ namespace StoreApp.Controllers
             return Ok(product);
         }
 
+        // find
+
+        [HttpGet ("find/{q}")]
+        public async Task<ActionResult> FindProduct(string q)
+        {
+            var product = _productService.FindProduct(q);
+            return Ok(product);
+        }
+
         [HttpGet] 
         public async Task<IActionResult> GetAll()
         {

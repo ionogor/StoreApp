@@ -19,6 +19,8 @@ namespace StoreApp.Bll.Interfaces
         Task UpdateProduct(int id, ProductUpdateDto product);
         Task<Product> DeleteProduct(int id);
         Task<PageRequest> GetPageProduct(int page,int IdCatalog);
+
+        Task<List<ProductDto>> FindProduct(string q);
        
 
     }
