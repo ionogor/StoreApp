@@ -29,7 +29,7 @@ namespace StoreApp.Bll.Repositories
 
         }
 
-        public async Task<UserDto> AddUser([FromBody]CreateUserDto userDto)
+        public async Task<UserDto> AddUser(CreateUserDto userDto)
         {
            
 

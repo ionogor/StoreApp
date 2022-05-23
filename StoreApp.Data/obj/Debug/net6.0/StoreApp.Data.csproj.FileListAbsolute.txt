@@ -1,8 +1,11 @@
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\bin\Debug\net6.0\StoreApp.Data.dll.config
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\bin\Debug\net6.0\StoreApp.Data.deps.json
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\bin\Debug\net6.0\StoreApp.Data.runtimeconfig.json
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\bin\Debug\net6.0\StoreApp.Data.dll
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\bin\Debug\net6.0\StoreApp.Data.pdb
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\bin\Debug\net6.0\StoreApp.Common.dll
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\bin\Debug\net6.0\StoreApp.Domain.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\bin\Debug\net6.0\StoreApp.Common.pdb
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\bin\Debug\net6.0\StoreApp.Domain.pdb
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\obj\Debug\net6.0\StoreApp.Data.csproj.AssemblyReference.cache
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\obj\Debug\net6.0\StoreApp.Data.GeneratedMSBuildEditorConfig.editorconfig
@@ -11,10 +14,7 @@ D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\obj\Debug\net6.0\Sto
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\obj\Debug\net6.0\StoreApp.Data.csproj.CoreCompileInputs.cache
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\obj\Debug\net6.0\StoreApp.Data.csproj.CopyComplete
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\obj\Debug\net6.0\StoreApp.Data.dll
-D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\obj\Debug\net6.0\ref\StoreApp.Data.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\obj\Debug\net6.0\refint\StoreApp.Data.dll
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\obj\Debug\net6.0\StoreApp.Data.pdb
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\obj\Debug\net6.0\StoreApp.Data.genruntimeconfig.cache
-D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\bin\Debug\net6.0\StoreApp.Data.dll.config
-D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\obj\Debug\net6.0\refint\StoreApp.Data.dll
-D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\bin\Debug\net6.0\StoreApp.Common.dll
-D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\bin\Debug\net6.0\StoreApp.Common.pdb
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Data\obj\Debug\net6.0\ref\StoreApp.Data.dll

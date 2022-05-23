@@ -17,7 +17,7 @@ namespace StoreApp.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.4")
+                .HasAnnotation("ProductVersion", "6.0.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -78,6 +78,29 @@ namespace StoreApp.Data.Migrations
                             Avatar = "laptop.jpg",
                             Name = "Laptop"
                         });
+                });
+
+            modelBuilder.Entity("StoreApp.Domain.Entity.ConversionRate", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateUpdate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("Value")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ConversionRates");
                 });
 
             modelBuilder.Entity("StoreApp.Domain.Entity.Order", b =>
@@ -365,9 +388,6 @@ namespace StoreApp.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Test")
-                        .HasColumnType("int");
-
                     b.Property<bool>("Type")
                         .HasColumnType("bit");
 
@@ -448,7 +468,7 @@ namespace StoreApp.Data.Migrations
             modelBuilder.Entity("StoreApp.Domain.Entity.Supplier", b =>
                 {
                     b.HasOne("StoreApp.Domain.Entity.Address", "Address")
-                        .WithMany("Suppliers")
+                        .WithMany()
                         .HasForeignKey("AddressId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -459,17 +479,10 @@ namespace StoreApp.Data.Migrations
             modelBuilder.Entity("StoreApp.Domain.Entity.User", b =>
                 {
                     b.HasOne("StoreApp.Domain.Entity.Address", "Address")
-                        .WithMany("Users")
+                        .WithMany()
                         .HasForeignKey("AddressId");
 
                     b.Navigation("Address");
-                });
-
-            modelBuilder.Entity("StoreApp.Domain.Entity.Address", b =>
-                {
-                    b.Navigation("Suppliers");
-
-                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("StoreApp.Domain.Entity.Catalog", b =>

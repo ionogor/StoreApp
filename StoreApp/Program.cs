@@ -7,6 +7,7 @@ using StoreApp.Common.Profiles;
 using StoreApp.Data.Context;
 using StoreApp.Data.Interfaces;
 using StoreApp.Data.Repository;
+using StoreApp.Domain.Entity;
 using StoreApp.Helpers;
 
 
@@ -38,10 +39,16 @@ builder.Services.AddScoped(typeof(IRepository<>),typeof(EfCoreRepository<>));
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddAutoMapper(typeof(ProductProfile));
 builder.Services.AddAutoMapper(typeof(UserProfile));
+builder.Services.AddAutoMapper(typeof(RateProfile));
+
 builder.Services.AddScoped<IProductService,ProductService>();
 builder.Services.AddScoped<ICatalogService,CatalogService>();
 builder.Services.AddScoped<JwtService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IConversionRate, ConversionService>();
+
+
+
 
 
 

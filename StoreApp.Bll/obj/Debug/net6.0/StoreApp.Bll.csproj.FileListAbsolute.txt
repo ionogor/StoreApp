@@ -1,8 +1,3 @@
-D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\obj\Debug\net6.0\StoreApp.Bll.csproj.AssemblyReference.cache
-D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\obj\Debug\net6.0\StoreApp.Bll.GeneratedMSBuildEditorConfig.editorconfig
-D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\obj\Debug\net6.0\StoreApp.Bll.AssemblyInfoInputs.cache
-D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\obj\Debug\net6.0\StoreApp.Bll.AssemblyInfo.cs
-D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\obj\Debug\net6.0\StoreApp.Bll.csproj.CoreCompileInputs.cache
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\bin\Debug\net6.0\StoreApp.Bll.deps.json
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\bin\Debug\net6.0\StoreApp.Bll.dll
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\bin\Debug\net6.0\StoreApp.Bll.pdb
@@ -13,6 +8,11 @@ D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\bin\Debug\net6.0\Stor
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\bin\Debug\net6.0\StoreApp.Data.pdb
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\bin\Debug\net6.0\StoreApp.Data.dll.config
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\bin\Debug\net6.0\StoreApp.Domain.pdb
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\obj\Debug\net6.0\StoreApp.Bll.csproj.AssemblyReference.cache
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\obj\Debug\net6.0\StoreApp.Bll.GeneratedMSBuildEditorConfig.editorconfig
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\obj\Debug\net6.0\StoreApp.Bll.AssemblyInfoInputs.cache
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\obj\Debug\net6.0\StoreApp.Bll.AssemblyInfo.cs
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\obj\Debug\net6.0\StoreApp.Bll.csproj.CoreCompileInputs.cache
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\obj\Debug\net6.0\StoreApp.Bll.csproj.CopyComplete
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\obj\Debug\net6.0\StoreApp.Bll.dll
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp.Bll\obj\Debug\net6.0\refint\StoreApp.Bll.dll

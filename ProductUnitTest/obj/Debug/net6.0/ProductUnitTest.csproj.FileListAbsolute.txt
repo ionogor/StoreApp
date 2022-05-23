@@ -17,9 +17,12 @@ D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\P
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\ProductUnitTest.pdb
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\AutoMapper.dll
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\DevOne.Security.Cryptography.BCrypt.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\BCrypt.Net-Next.dll
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\Castle.Core.dll
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\System.Net.Http.Formatting.dll
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\System.Web.Http.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
@@ -160,6 +163,3 @@ D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\obj\Debug\net6.0\r
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\obj\Debug\net6.0\ProductUnitTest.pdb
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\obj\Debug\net6.0\ProductUnitTest.genruntimeconfig.cache
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\obj\Debug\net6.0\ref\ProductUnitTest.dll
-D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\DevOne.Security.Cryptography.BCrypt.dll
-D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\BCrypt.Net-Next.dll
-D:\Internship Amdaris\ProiectAmdaris\StoreApp\ProductUnitTest\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

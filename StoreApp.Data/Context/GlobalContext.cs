@@ -36,6 +36,7 @@ namespace StoreApp.Data.Context
         public DbSet<User> Users { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<Address> Addresses { get; set; }
+        public DbSet<ConversionRate> ConversionRates { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -46,8 +47,7 @@ namespace StoreApp.Data.Context
             modelBuilder.ApplyConfiguration(new ProductConfig());
 
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-         
-
+      
 
             modelBuilder.Entity<OrderDetail>()
                 .HasOne(x => x.Order)
