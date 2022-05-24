@@ -80,3 +80,9 @@ D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\obj\Debug\net6.0\StoreApp
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\DevOne.Security.Cryptography.BCrypt.dll
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\BCrypt.Net-Next.dll
 D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\Azure.Core.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\Azure.Storage.Blobs.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\Azure.Storage.Common.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\System.IO.Hashing.dll
+D:\Internship Amdaris\ProiectAmdaris\StoreApp\StoreApp\bin\Debug\net6.0\System.Memory.Data.dll

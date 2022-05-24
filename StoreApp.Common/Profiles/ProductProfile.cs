@@ -20,7 +20,7 @@ namespace StoreApp.Common.Profiles
                 .ForMember(x=>x.Reviews,y=>y.MapFrom(dest=>dest.Reviews));
             CreateMap<ProductUpdateDto, Product>().ReverseMap();
             CreateMap<Product, ProductListDto>();
-            CreateMap<Product, CreateProductDto>().ReverseMap();
+            CreateMap<Product, CreateProductDto>().ForMember(x=>x.PhotoPath,y=>y.MapFrom(dest=>dest.Photos.Url)).ReverseMap();
             CreateMap<Product,ProductListDto>().ReverseMap();
         }
     }

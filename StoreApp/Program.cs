@@ -1,3 +1,4 @@
+using Azure.Storage.Blobs;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using StoreApp.Bll.Interfaces;
@@ -9,7 +10,7 @@ using StoreApp.Data.Interfaces;
 using StoreApp.Data.Repository;
 using StoreApp.Domain.Entity;
 using StoreApp.Helpers;
-
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>
@@ -46,6 +47,7 @@ builder.Services.AddScoped<ICatalogService,CatalogService>();
 builder.Services.AddScoped<JwtService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IConversionRate, ConversionService>();
+builder.Services.AddScoped<IOrder,OrderService>();
 
 
 

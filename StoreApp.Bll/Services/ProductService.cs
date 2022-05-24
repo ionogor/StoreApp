@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Azure.Storage.Blobs;
 using Microsoft.EntityFrameworkCore;
 using StoreApp.Bll.Interfaces;
 using StoreApp.Common.Dtos.Products;
@@ -20,19 +21,22 @@ namespace StoreApp.Bll.Services
     {
 
         private readonly IRepository<Product> _repository;
+        //private readonly BlobServiceClient _blobservice;
         private readonly IMapper _mapper;
 
         public ProductService(IRepository<Product> repository, IMapper mapper)
         {
             _repository= repository;
             _mapper= mapper;
+           
         }
 
 
 
         public async Task<ProductDto> CreateProduct([FromBody] CreateProductDto product)
         {
-
+            //var container = _blobservice.GetBlobContainerClient("photo");
+            
             var newProduct = _mapper.Map<Product>(product);
             _repository.Add(newProduct);
             _repository.SaveChangeAsync();

@@ -17,7 +17,7 @@ namespace StoreApp.Common.Dtos.Products
         public string Description { get; set; }
         public decimal Price { get; set; }
         public int Stock { get; set; }
-
+        public string PhotoPath { get; set; }
         public int CatalogId { get; set; }
         public int SupplierId { get; set; }
     }

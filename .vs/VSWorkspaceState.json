@@ -3,7 +3,7 @@
     "",
     "\\StoreApp",
     "\\StoreApp.Bll",
-    "\\StoreApp.Bll\\Interfaces",
+    "\\StoreApp.Bll\\Services",
     "\\StoreApp.Common",
     "\\StoreApp.Common\\Profiles",
     "\\StoreApp.Data",

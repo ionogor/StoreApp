@@ -49,9 +49,7 @@ namespace StoreApp.Data.Context
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
       
 
-            modelBuilder.Entity<OrderDetail>()
-                .HasOne(x => x.Order)
-                .WithMany(x => x.OrderDetails).HasForeignKey(x => x.UserId);
+     
 
             modelBuilder.Entity<OrderDetail>()
                 .HasOne(x => x.User)
